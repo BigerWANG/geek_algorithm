@@ -11,8 +11,8 @@ class Producer(threading.Thread):
         self.data = queue
 
     def run(self):
-        for i in xrange(5):
-            print "start put task ", i
+        for i in range(5):
+            print("start put task ", i)
             self.data.put(i)
             time.sleep(1)
 
@@ -23,9 +23,9 @@ class Consumer(threading.Thread):
         self.data = queue
 
     def run(self):
-        for i in xrange(5):
+        for i in range(5):
             val = self.data.get()
-            print "I got task ", val
+            print("I got task ", val)
 
 
 def main():
@@ -36,7 +36,7 @@ def main():
     c.start()
     p.join()
     c.join()
-    print "all task is done"
+    print("all task is done")
 
 
 def main1():
