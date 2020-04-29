@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="PYTHON_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$" />
+    <orderEntry type="jdk" jdkName="Python 3.7.3 virtualenv at ~/workspaces/maoyan/workflow_backend/env" jdkType="Python SDK" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="Jaqen" />
+    <orderEntry type="module" module-name="python_interview_question" />
+    <orderEntry type="module" module-name="jumper-service" />
+    <orderEntry type="module" module-name="punch_api" />
+    <orderEntry type="module" module-name="workflow_api" />
+    <orderEntry type="module" module-name="jumper_api" />
+    <orderEntry type="module" module-name="exos" />
+    <orderEntry type="module" module-name="syncOA" />
+    <orderEntry type="module" module-name="mygravity_api" />
+    <orderEntry type="module" module-name="ams_api" />
+    <orderEntry type="module" module-name="ldap" />
+    <orderEntry type="module" module-name="RpcAgent" />
+    <orderEntry type="module" module-name="Gravity-api" />
+    <orderEntry type="module" module-name="Gravity-api" />
+    <orderEntry type="module" module-name="Gravity-api" />
+    <orderEntry type="module" module-name="Gravity-api" />
+    <orderEntry type="module" module-name="Gravity-api" />
+    <orderEntry type="module" module-name="workflow_backend" />
+    <orderEntry type="module" module-name="Jaqen" />
+    <orderEntry type="module" module-name="jumper-web" />
+    <orderEntry type="module" module-name="jumper-agent" />
+    <orderEntry type="module" module-name="RpcService" />
+    <orderEntry type="module" module-name="climb" />
+    <orderEntry type="module" module-name="grpcservice" />
+    <orderEntry type="module" module-name="workflow-api" />
+  </component>
+  <component name="TestRunnerService">
+    <option name="PROJECT_TEST_RUNNER" value="Unittests" />
+  </component>
+</module>
