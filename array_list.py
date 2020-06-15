@@ -12,5 +12,3 @@ base_address 内存块的首块地址
 
 为什么
 """
-
-from collections import abc
