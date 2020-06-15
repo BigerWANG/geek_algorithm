@@ -7,18 +7,22 @@
     <mapping directory="$PROJECT_DIR$/../../maoyan/RpcService" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../../maoyan/ams_api" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../../maoyan/climb" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../maoyan/dba_api" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../../maoyan/grpcservice" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../../maoyan/jumper-agent" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../../maoyan/jumper-service" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../../maoyan/jumper-web" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../../maoyan/jumper_api" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../../maoyan/ldap" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../maoyan/maoyan-cos" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../maoyan/my_dbapi" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../../maoyan/mygravity_api" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../../maoyan/punch_api" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../../maoyan/syncOA" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../../maoyan/workflow-api" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../../maoyan/workflow_api" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../../maoyan/workflow_backend" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../wepiao/python/bis" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../../wepiao/python/exos" vcs="Git" />
   </component>
 </project>

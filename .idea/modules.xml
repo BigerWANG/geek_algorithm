@@ -7,19 +7,24 @@
       <module fileurl="file://$PROJECT_DIR$/../../maoyan/RpcAgent/.idea/RpcAgent.iml" filepath="$PROJECT_DIR$/../../maoyan/RpcAgent/.idea/RpcAgent.iml" />
       <module fileurl="file://$PROJECT_DIR$/../../maoyan/RpcService/.idea/RpcService.iml" filepath="$PROJECT_DIR$/../../maoyan/RpcService/.idea/RpcService.iml" />
       <module fileurl="file://$PROJECT_DIR$/../../maoyan/ams_api/.idea/ams_api.iml" filepath="$PROJECT_DIR$/../../maoyan/ams_api/.idea/ams_api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../wepiao/python/bis/.idea/bis.iml" filepath="$PROJECT_DIR$/../../wepiao/python/bis/.idea/bis.iml" />
       <module fileurl="file://$PROJECT_DIR$/../../maoyan/climb/.idea/climb.iml" filepath="$PROJECT_DIR$/../../maoyan/climb/.idea/climb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../maoyan/dba_api/.idea/dba_api.iml" filepath="$PROJECT_DIR$/../../maoyan/dba_api/.idea/dba_api.iml" />
       <module fileurl="file://$PROJECT_DIR$/../../wepiao/python/exos/.idea/exos.iml" filepath="$PROJECT_DIR$/../../wepiao/python/exos/.idea/exos.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/geek_suanfa.iml" filepath="$PROJECT_DIR$/.idea/geek_suanfa.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../wepiao/python/grocer/.idea/grocer.iml" filepath="$PROJECT_DIR$/../../wepiao/python/grocer/.idea/grocer.iml" />
       <module fileurl="file://$PROJECT_DIR$/../../maoyan/grpcservice/.idea/grpcservice.iml" filepath="$PROJECT_DIR$/../../maoyan/grpcservice/.idea/grpcservice.iml" />
       <module fileurl="file://$PROJECT_DIR$/../../maoyan/jumper-agent/.idea/jumper-agent.iml" filepath="$PROJECT_DIR$/../../maoyan/jumper-agent/.idea/jumper-agent.iml" />
       <module fileurl="file://$PROJECT_DIR$/../../maoyan/jumper-service/.idea/jumper-service.iml" filepath="$PROJECT_DIR$/../../maoyan/jumper-service/.idea/jumper-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/../../maoyan/jumper-web/.idea/jumper-web.iml" filepath="$PROJECT_DIR$/../../maoyan/jumper-web/.idea/jumper-web.iml" />
       <module fileurl="file://$PROJECT_DIR$/../../maoyan/jumper_api/.idea/jumper_api.iml" filepath="$PROJECT_DIR$/../../maoyan/jumper_api/.idea/jumper_api.iml" />
       <module fileurl="file://$PROJECT_DIR$/../../maoyan/ldap/.idea/ldap.iml" filepath="$PROJECT_DIR$/../../maoyan/ldap/.idea/ldap.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../maoyan/maoyan-cos/.idea/maoyan-cos.iml" filepath="$PROJECT_DIR$/../../maoyan/maoyan-cos/.idea/maoyan-cos.iml" />
       <module fileurl="file://$PROJECT_DIR$/../../maoyan/mygravity_api/.idea/mygravity_api.iml" filepath="$PROJECT_DIR$/../../maoyan/mygravity_api/.idea/mygravity_api.iml" />
       <module fileurl="file://$PROJECT_DIR$/../../maoyan/punch_api/.idea/punch_api.iml" filepath="$PROJECT_DIR$/../../maoyan/punch_api/.idea/punch_api.iml" />
       <module fileurl="file://$PROJECT_DIR$/../python_interview_question/.idea/python_interview_question.iml" filepath="$PROJECT_DIR$/../python_interview_question/.idea/python_interview_question.iml" />
       <module fileurl="file://$PROJECT_DIR$/../../maoyan/syncOA/.idea/syncOA.iml" filepath="$PROJECT_DIR$/../../maoyan/syncOA/.idea/syncOA.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../my/django/wmy_blog/.idea/wmy_blog.iml" filepath="$PROJECT_DIR$/../../my/django/wmy_blog/.idea/wmy_blog.iml" />
       <module fileurl="file://$PROJECT_DIR$/../../maoyan/workflow-api/.idea/workflow-api.iml" filepath="$PROJECT_DIR$/../../maoyan/workflow-api/.idea/workflow-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/../../maoyan/workflow_api/.idea/workflow_api.iml" filepath="$PROJECT_DIR$/../../maoyan/workflow_api/.idea/workflow_api.iml" />
       <module fileurl="file://$PROJECT_DIR$/../../maoyan/workflow_backend/.idea/workflow_backend.iml" filepath="$PROJECT_DIR$/../../maoyan/workflow_backend/.idea/workflow_backend.iml" />
