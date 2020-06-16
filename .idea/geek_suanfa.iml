@@ -35,6 +35,7 @@
     <orderEntry type="module" module-name="grocer" />
     <orderEntry type="module" module-name="dba_api" />
     <orderEntry type="module" module-name="wmy_blog" />
+    <orderEntry type="module" module-name="tecs" />
   </component>
   <component name="TestRunnerService">
     <option name="PROJECT_TEST_RUNNER" value="Unittests" />

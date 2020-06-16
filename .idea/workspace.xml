@@ -6,6 +6,9 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../maoyan/Gravity-api/app/httpclient/ORGAPI.py" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../maoyan/Gravity-api/app/httpclient/__init__.py" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../maoyan/my_dbapi/code.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../wepiao/python/tecs/scripts/python_test.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../wepiao/python/tecs/scripts/qlb_script.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../wepiao/python/tecs/scripts/test.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../maoyan/Gravity-api/app/api/v1/workflow/workflowAction.py" afterPath="$PROJECT_DIR$/../../maoyan/Gravity-api/app/api/v1/workflow/workflowAction.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../maoyan/Gravity-api/app/api/v1/workflow/workflow_api.py" afterPath="$PROJECT_DIR$/../../maoyan/Gravity-api/app/api/v1/workflow/workflow_api.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../maoyan/Gravity-api/app/config/development.py" afterPath="$PROJECT_DIR$/../../maoyan/Gravity-api/app/config/development.py" />
@@ -14,12 +17,13 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../maoyan/Gravity-api/app/models/work.py" afterPath="$PROJECT_DIR$/../../maoyan/Gravity-api/app/models/work.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../maoyan/Gravity-api/app/models/workflow_job.py" afterPath="$PROJECT_DIR$/../../maoyan/Gravity-api/app/models/workflow_job.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../maoyan/Gravity-api/app/utils/verify.py" afterPath="$PROJECT_DIR$/../../maoyan/Gravity-api/app/utils/verify.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../maoyan/Jaqen/app/sshd/shell/jumper.py" afterPath="$PROJECT_DIR$/../../maoyan/Jaqen/app/sshd/shell/jumper.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../maoyan/Jaqen/app/sshd/utlis.py" afterPath="$PROJECT_DIR$/../../maoyan/Jaqen/app/sshd/utlis.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../maoyan/RpcAgent/CfgRpcAgent.py" afterPath="$PROJECT_DIR$/../../maoyan/RpcAgent/CfgRpcAgent.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../maoyan/RpcService/task/rpcclient.py" afterPath="$PROJECT_DIR$/../../maoyan/RpcService/task/rpcclient.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../maoyan/RpcService/task/task.py" afterPath="$PROJECT_DIR$/../../maoyan/RpcService/task/task.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../maoyan/RpcService/test.py" afterPath="$PROJECT_DIR$/../../maoyan/RpcService/test.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../maoyan/RpcService/utils/logger.py" afterPath="$PROJECT_DIR$/../../maoyan/RpcService/utils/logger.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../maoyan/ams_api/mysite/config.py" afterPath="$PROJECT_DIR$/../../maoyan/ams_api/mysite/config.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../maoyan/grpcservice/task/task.py" afterPath="$PROJECT_DIR$/../../maoyan/grpcservice/task/task.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../maoyan/jumper-service/app/common/async.py" afterPath="$PROJECT_DIR$/../../maoyan/jumper-service/app/common/async.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../maoyan/jumper-service/app/common/notice.py" afterPath="$PROJECT_DIR$/../../maoyan/jumper-service/app/common/notice.py" />
@@ -46,6 +50,11 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../maoyan/my_dbapi/resources/ddl.py" afterPath="$PROJECT_DIR$/../../maoyan/my_dbapi/resources/ddl.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../wepiao/python/exos/scripts/scores/get_jenkins_coverage.py" afterPath="$PROJECT_DIR$/../../wepiao/python/exos/scripts/scores/get_jenkins_coverage.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../wepiao/python/exos/scripts/scores/score_worker.py" afterPath="$PROJECT_DIR$/../../wepiao/python/exos/scripts/scores/score_worker.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../wepiao/python/tecs/Dockerfile" afterPath="$PROJECT_DIR$/../../wepiao/python/tecs/Dockerfile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../wepiao/python/tecs/es/es_error_report/print_ticket_report.py" afterPath="$PROJECT_DIR$/../../wepiao/python/tecs/es/es_error_report/print_ticket_report.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../wepiao/python/tecs/requirements.txt" afterPath="$PROJECT_DIR$/../../wepiao/python/tecs/requirements.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../wepiao/python/tecs/scripts/multi_send_bonus.py" afterPath="$PROJECT_DIR$/../../wepiao/python/tecs/scripts/multi_send_bonus.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../wepiao/python/tecs/tecs/settings.py" afterPath="$PROJECT_DIR$/../../wepiao/python/tecs/tecs/settings.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -55,14 +64,94 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.705625">
+    <splitter split-orientation="horizontal" split-proportion="0.22375">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="test.py" pinned="false" current-in-tab="true">
+          <file leaf-file-name="test.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/test.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="300">
-                  <caret line="20" column="10" lean-forward="true" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
+                <state relative-caret-position="210">
+                  <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="decorators.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/../../maoyan/workflow-api/mysite/utils/decorators.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="306">
+                  <caret line="211" column="26" lean-forward="false" selection-start-line="211" selection-start-column="26" selection-end-line="211" selection-end-column="26" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="30.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/offer/30.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="301">
+                  <caret line="32" column="20" lean-forward="false" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="03.py" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/offer/03.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="225">
+                  <caret line="15" column="20" lean-forward="false" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="sort.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/sort.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="225">
+                  <caret line="116" column="7" lean-forward="false" selection-start-line="116" selection-start-column="7" selection-end-line="116" selection-end-column="7" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="update_callback.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/../../maoyan/ams_api/scripts/update_callback.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-50">
+                  <caret line="7" column="32" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="retry_fail_data.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/../../maoyan/ams_api/scripts/retry_fail_data.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="336">
+                  <caret line="125" column="68" lean-forward="false" selection-start-line="125" selection-start-column="68" selection-end-line="125" selection-end-column="68" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="config.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/../../maoyan/ams_api/mysite/config.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="287">
+                  <caret line="86" column="0" lean-forward="false" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="public_utils.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/../../maoyan/ams_api/mysite/utils/public_utils.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="444">
+                  <caret line="137" column="53" lean-forward="false" selection-start-line="137" selection-start-column="53" selection-end-line="137" selection-end-column="53" />
                   <folding />
                 </state>
               </provider>
@@ -78,134 +167,98 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="user_list.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/../../maoyan/workflow_api/mysite/views/user_list.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="346">
-                  <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
-                  <folding>
-                    <element signature="e#150#165#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="config.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/../../maoyan/workflow_api/mysite/config.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="193">
-                  <caret line="75" column="4" lean-forward="false" selection-start-line="75" selection-start-column="4" selection-end-line="75" selection-end-column="4" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
         </leaf>
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="localcache.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/../../maoyan/maoyan-cos/maoyan_cos/libs/localcache.py">
+          <file leaf-file-name="channel.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/../../maoyan/Jaqen/env/lib/python2.7/site-packages/paramiko/channel.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="377">
-                  <caret line="31" column="18" lean-forward="false" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
+                <state relative-caret-position="220">
+                  <caret line="1072" column="26" lean-forward="false" selection-start-line="1072" selection-start-column="26" selection-end-line="1072" selection-end-column="26" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="04.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/offer/04.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="482">
+                  <caret line="72" column="0" lean-forward="false" selection-start-line="72" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="06.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/offer/06.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="450">
+                  <caret line="30" column="11" lean-forward="true" selection-start-line="30" selection-start-column="11" selection-end-line="30" selection-end-column="11" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="utlis.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/../../maoyan/Jaqen/app/sshd/utlis.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="355">
+                  <caret line="132" column="15" lean-forward="false" selection-start-line="132" selection-start-column="0" selection-end-line="133" selection-end-column="0" />
                   <folding>
-                    <element signature="e#16#29#0" expanded="true" />
+                    <element signature="e#25#39#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="login.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/../../maoyan/Jaqen/app/sshd/auth/login.py">
+          <file leaf-file-name="ssh_option.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/../../maoyan/Jaqen/app/sshd/shell/ssh_option.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="250">
-                  <caret line="54" column="13" lean-forward="false" selection-start-line="54" selection-start-column="13" selection-end-line="54" selection-end-column="13" />
+                <state relative-caret-position="-92">
+                  <caret line="32" column="38" lean-forward="true" selection-start-line="32" selection-start-column="38" selection-end-line="32" selection-end-column="38" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="password.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/../../maoyan/Jaqen/app/sshd/auth/password.py">
+          <file leaf-file-name="jumper.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/../../maoyan/Jaqen/app/sshd/shell/jumper.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="330">
-                  <caret line="29" column="23" lean-forward="false" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
+                <state relative-caret-position="333">
+                  <caret line="209" column="30" lean-forward="true" selection-start-line="209" selection-start-column="30" selection-end-line="209" selection-end-column="30" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="array_list.py" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/array_list.py">
+          <file leaf-file-name="command.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/../../maoyan/Jaqen/app/sshd/shell/command.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="195">
-                  <caret line="13" column="3" lean-forward="false" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
+                <state relative-caret-position="325">
+                  <caret line="141" column="37" lean-forward="true" selection-start-line="141" selection-start-column="37" selection-end-line="141" selection-end-column="37" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="proxy.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/../../maoyan/Jaqen/app/sshd/proxy.py">
+          <file leaf-file-name="handler.py" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/../../maoyan/Jaqen/app/sshd/handler.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="404">
-                  <caret line="206" column="25" lean-forward="false" selection-start-line="206" selection-start-column="25" selection-end-line="206" selection-end-column="25" />
+                <state relative-caret-position="876">
+                  <caret line="178" column="23" lean-forward="true" selection-start-line="178" selection-start-column="0" selection-end-line="179" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="functools.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/../../maoyan/maoyan-cos/env/lib/python3.7/functools.py">
+          <file leaf-file-name="240.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/leetcode/240.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="227">
-                  <caret line="68" column="30" lean-forward="false" selection-start-line="68" selection-start-column="30" selection-end-line="68" selection-end-column="30" />
+                <state relative-caret-position="270">
+                  <caret line="18" column="22" lean-forward="false" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
                   <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="mycos_api.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/../../maoyan/maoyan-cos/maoyan_cos/libs/mycos_api.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="323">
-                  <caret line="74" column="12" lean-forward="false" selection-start-line="74" selection-start-column="12" selection-end-line="74" selection-end-column="12" />
-                  <folding>
-                    <element signature="e#16#31#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="builtins.py" pinned="false" current-in-tab="false">
-            <entry file="file://$USER_HOME$/Library/Caches/PyCharmCE2017.2/python_stubs/2072401520/builtins.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="197">
-                  <caret line="190" column="4" lean-forward="false" selection-start-line="190" selection-start-column="4" selection-end-line="190" selection-end-column="4" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/../../maoyan/maoyan-cos/maoyan_cos/__init__.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="30">
-                  <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="cos.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/../../maoyan/maoyan-cos/maoyan_cos/cos.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="451">
-                  <caret line="180" column="0" lean-forward="false" selection-start-line="180" selection-start-column="0" selection-end-line="180" selection-end-column="0" />
-                  <folding>
-                    <element signature="e#15#29#0" expanded="true" />
-                  </folding>
                 </state>
               </provider>
             </entry>
@@ -223,7 +276,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>MyBAServer</find>
       <find>V1_SECRET</find>
       <find>ORG_CLIENT_ID</find>
       <find>1251246104</find>
@@ -253,6 +305,7 @@
       <find>commands_list</find>
       <find>source</find>
       <find>history</find>
+      <find>employee.posorg.change</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -267,21 +320,11 @@
     </replaceStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../maoyan/workflow_api" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../maoyan/Jaqen" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/../../maoyan/maoyan-cos/get_temp_key.py" />
-        <option value="$PROJECT_DIR$/../../maoyan/maoyan-cos/mycos_data.py" />
-        <option value="$PROJECT_DIR$/../../maoyan/maoyan-cos/api.py" />
-        <option value="$PROJECT_DIR$/../../maoyan/maoyan-cos/request.py" />
-        <option value="$PROJECT_DIR$/../../wepiao/python/grocer/grocer/extensions/validator.py" />
-        <option value="$PROJECT_DIR$/../../maoyan/maoyan-cos/exception.py" />
-        <option value="$PROJECT_DIR$/../../maoyan/maoyan-cos/mycos_api.py" />
-        <option value="$PROJECT_DIR$/../../maoyan/maoyan-cos/utils/__init__.py" />
-        <option value="$PROJECT_DIR$/../../maoyan/maoyan-cos/utils/request.py" />
-        <option value="$PROJECT_DIR$/../../maoyan/maoyan-cos/base.py" />
         <option value="$PROJECT_DIR$/../../maoyan/maoyan-cos/requirements.txt" />
         <option value="$PROJECT_DIR$/../../maoyan/maoyan-cos/libs/mycos_api.py" />
         <option value="$PROJECT_DIR$/../../maoyan/maoyan-cos/libs/exception.py" />
@@ -294,7 +337,6 @@
         <option value="$PROJECT_DIR$/../../maoyan/workflow_api/mysite/utils/decorators.py" />
         <option value="$PROJECT_DIR$/../../maoyan/ams_api/mysite/utils/public_utils.py" />
         <option value="$PROJECT_DIR$/../../maoyan/ams_api/scripts/update_callback.py" />
-        <option value="$PROJECT_DIR$/../../maoyan/ams_api/mysite/config.py" />
         <option value="$PROJECT_DIR$/../../maoyan/workflow_backend/app/api/v1/works/work_operation.py" />
         <option value="$PROJECT_DIR$/../../maoyan/workflow_api/mysite/views/user_list.py" />
         <option value="$PROJECT_DIR$/../../maoyan/my_dbapi/config.py" />
@@ -323,12 +365,23 @@
         <option value="$PROJECT_DIR$/../../maoyan/workflow_api/mysite/utils/notice.py" />
         <option value="$PROJECT_DIR$/29.py" />
         <option value="$PROJECT_DIR$/30.py" />
+        <option value="$PROJECT_DIR$/../../maoyan/ams_api/scripts/retry_fail_data.py" />
+        <option value="$PROJECT_DIR$/../../maoyan/ams_api/mysite/config.py" />
+        <option value="$PROJECT_DIR$/../../maoyan/workflow-api/mysite/utils/notice.py" />
+        <option value="$PROJECT_DIR$/../../maoyan/Jaqen/app/sshd/utlis.py" />
+        <option value="$PROJECT_DIR$/leetcode/03.py" />
+        <option value="$PROJECT_DIR$/leetcode/04.py" />
+        <option value="$PROJECT_DIR$/leetcode/240.py" />
+        <option value="$PROJECT_DIR$/offer/04.py" />
+        <option value="$PROJECT_DIR$/../../wepiao/python/tecs/scripts/db_reporter.py" />
+        <option value="$PROJECT_DIR$/offer/06.py" />
+        <option value="$PROJECT_DIR$/../../maoyan/Jaqen/app/sshd/shell/jumper.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="1445" />
-    <option name="y" value="42" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1444" />
+    <option name="y" value="34" />
     <option name="width" value="1920" />
     <option name="height" value="1057" />
   </component>
@@ -353,15 +406,6 @@
           <expand>
             <path>
               <item name="geek_suanfa" type="b2602c69:ProjectViewProjectNode" />
-              <item name="geek_suanfa" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="geek_suanfa" type="b2602c69:ProjectViewProjectNode" />
-              <item name="geek_suanfa" type="462c0819:PsiDirectoryNode" />
-              <item name="leetcode" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="geek_suanfa" type="b2602c69:ProjectViewProjectNode" />
               <item name="Jaqen" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -380,103 +424,16 @@
               <item name="Jaqen" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="sshd" type="462c0819:PsiDirectoryNode" />
-              <item name="auth" type="462c0819:PsiDirectoryNode" />
+              <item name="shell" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="geek_suanfa" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jumper_api" type="462c0819:PsiDirectoryNode" />
+              <item name="tecs" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="geek_suanfa" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jumper_api" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="geek_suanfa" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jumper_api" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="geek_suanfa" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jumper_api" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="before_request" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="geek_suanfa" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jumper_api" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="v1" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="geek_suanfa" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jumper_api" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="v1" type="462c0819:PsiDirectoryNode" />
-              <item name="jumper" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="geek_suanfa" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jumper_api" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="v1" type="462c0819:PsiDirectoryNode" />
-              <item name="jumper_agent" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="geek_suanfa" type="b2602c69:ProjectViewProjectNode" />
-              <item name="workflow_api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="geek_suanfa" type="b2602c69:ProjectViewProjectNode" />
-              <item name="workflow_api" type="462c0819:PsiDirectoryNode" />
-              <item name="mysite" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="geek_suanfa" type="b2602c69:ProjectViewProjectNode" />
-              <item name="workflow_api" type="462c0819:PsiDirectoryNode" />
-              <item name="mysite" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="geek_suanfa" type="b2602c69:ProjectViewProjectNode" />
-              <item name="workflow_api" type="462c0819:PsiDirectoryNode" />
-              <item name="mysite" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="geek_suanfa" type="b2602c69:ProjectViewProjectNode" />
-              <item name="workflow_backend" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="geek_suanfa" type="b2602c69:ProjectViewProjectNode" />
-              <item name="workflow_backend" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="geek_suanfa" type="b2602c69:ProjectViewProjectNode" />
-              <item name="workflow_backend" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="geek_suanfa" type="b2602c69:ProjectViewProjectNode" />
-              <item name="workflow_backend" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="v1" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="geek_suanfa" type="b2602c69:ProjectViewProjectNode" />
-              <item name="workflow_backend" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="v1" type="462c0819:PsiDirectoryNode" />
-              <item name="works" type="462c0819:PsiDirectoryNode" />
+              <item name="tecs" type="462c0819:PsiDirectoryNode" />
+              <item name="scripts" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -491,12 +448,16 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../maoyan/grpcservice/env/bin/python2.7" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/offer" />
+      <recent name="$PROJECT_DIR$/leetcode" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/offer" />
       <recent name="$PROJECT_DIR$/../../maoyan/maoyan-cos/maoyan_cos" />
       <recent name="$PROJECT_DIR$/../../maoyan/maoyan-cos/libs" />
       <recent name="$PROJECT_DIR$/../../maoyan/maoyan-cos/utils" />
       <recent name="$PROJECT_DIR$/../../maoyan/Jaqen/app/lib" />
-      <recent name="$PROJECT_DIR$/../../maoyan/workflow_backend/app" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -511,7 +472,58 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.30">
+  <component name="RunManager" selected="Python.04">
+    <configuration name="03" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/leetcode" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="geek_suanfa" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/offer/03.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="04" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/offer" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="geek_suanfa" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/offer/04.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="240" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/leetcode" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="geek_suanfa" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/leetcode/240.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
     <configuration name="29" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -546,71 +558,20 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="739" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="geek_suanfa" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/739.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
-    <configuration name="base" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../maoyan/maoyan-cos" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="maoyan-cos" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../maoyan/maoyan-cos/maoyan_cos/cos.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="geek_suanfa" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.base" />
-      <item index="1" class="java.lang.String" itemvalue="Python.test" />
-      <item index="2" class="java.lang.String" itemvalue="Python.739" />
-      <item index="3" class="java.lang.String" itemvalue="Python.29" />
-      <item index="4" class="java.lang.String" itemvalue="Python.30" />
+      <item index="0" class="java.lang.String" itemvalue="Python.29" />
+      <item index="1" class="java.lang.String" itemvalue="Python.30" />
+      <item index="2" class="java.lang.String" itemvalue="Python.03" />
+      <item index="3" class="java.lang.String" itemvalue="Python.240" />
+      <item index="4" class="java.lang.String" itemvalue="Python.04" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.30" />
-        <item index="1" class="java.lang.String" itemvalue="Python.29" />
-        <item index="2" class="java.lang.String" itemvalue="Python.test" />
-        <item index="3" class="java.lang.String" itemvalue="Python.739" />
-        <item index="4" class="java.lang.String" itemvalue="Python.base" />
+        <item index="0" class="java.lang.String" itemvalue="Python.04" />
+        <item index="1" class="java.lang.String" itemvalue="Python.240" />
+        <item index="2" class="java.lang.String" itemvalue="Python.03" />
+        <item index="3" class="java.lang.String" itemvalue="Python.30" />
+        <item index="4" class="java.lang.String" itemvalue="Python.29" />
       </list>
     </recent_temporary>
   </component>
@@ -631,7 +592,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1445" y="42" width="1920" height="1057" extended-state="0" />
+    <frame x="1441" y="24" width="1920" height="1057" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14802982" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
@@ -639,7 +600,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24131082" sideWeight="0.5021299" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969216" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35758835" sideWeight="0.4978701" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1933472" sideWeight="0.4978701" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21946375" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
@@ -771,206 +732,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../../maoyan/Jaqen/app/sshd/history/ansi_parser.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="19" column="22" lean-forward="true" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../maoyan/Jaqen/app/sshd/history/cmd_record.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="543">
-          <caret line="69" column="63" lean-forward="true" selection-start-line="69" selection-start-column="63" selection-end-line="69" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../maoyan/Jaqen/app/sshd/screen/pty_record.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="53" column="30" lean-forward="false" selection-start-line="53" selection-start-column="30" selection-end-line="53" selection-end-column="30" />
-          <folding>
-            <marker date="1591781138778" expanded="true" signature="1369:2620" ph="..." />
-            <marker date="1591781138778" expanded="true" signature="2512:2620" ph="..." />
-            <marker date="1591781138778" expanded="true" signature="2650:3354" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../maoyan/Jaqen/app/sshd/shell/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../maoyan/Jaqen/app/sshd/screen/pty_play.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="545">
-          <caret line="156" column="44" lean-forward="true" selection-start-line="156" selection-start-column="44" selection-end-line="156" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../maoyan/Jaqen/app/sshd/shell/ssh_option.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="119" column="23" lean-forward="false" selection-start-line="119" selection-start-column="23" selection-end-line="119" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../maoyan/Jaqen/app/lib/http.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="28" column="26" lean-forward="false" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../maoyan/Jaqen/app/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="125" column="40" lean-forward="true" selection-start-line="125" selection-start-column="40" selection-end-line="125" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../maoyan/Jaqen/app/sshd/backend.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="18" column="15" lean-forward="false" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../maoyan/Jaqen/app/sshd/handler.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-99">
-          <caret line="52" column="20" lean-forward="false" selection-start-line="52" selection-start-column="20" selection-end-line="52" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../maoyan/Jaqen/app/sshd/screen/output.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="16">
-          <caret line="16" column="43" lean-forward="false" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../maoyan/Jaqen/app/sshd/screen/transport.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="50" column="12" lean-forward="false" selection-start-line="50" selection-start-column="12" selection-end-line="50" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../maoyan/Jaqen/app/sshd/shell/command.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="985">
-          <caret line="196" column="24" lean-forward="false" selection-start-line="196" selection-start-column="24" selection-end-line="196" selection-end-column="24" />
-          <folding>
-            <element signature="e#24#35#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../maoyan/Jaqen/app/sshd/shell/terminal.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="38" lean-forward="false" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../maoyan/Jaqen/app/common/async.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="331" column="21" lean-forward="false" selection-start-line="331" selection-start-column="21" selection-end-line="331" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../maoyan/Jaqen/app/initialize.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="12" column="10" lean-forward="false" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
-          <folding>
-            <element signature="e#25#41#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../maoyan/Jaqen/app/sshd/shell/jumper.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="166" column="8" lean-forward="false" selection-start-line="166" selection-start-column="8" selection-end-line="166" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/heapq.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="156" column="40" lean-forward="false" selection-start-line="156" selection-start-column="0" selection-end-line="157" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Caches/PyCharmCE2017.2/python_stubs/2072401520/_pickle.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="222" column="12" lean-forward="false" selection-start-line="222" selection-start-column="12" selection-end-line="222" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/pickle.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="1611" column="10" lean-forward="false" selection-start-line="1611" selection-start-column="10" selection-end-line="1611" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../maoyan/workflow-api/mysite/views/permission/jumper.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="45" column="35" lean-forward="false" selection-start-line="45" selection-start-column="35" selection-end-line="45" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../maoyan/workflow_backend/app/api/v1/works/workinfo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="8" column="15" lean-forward="false" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../maoyan/workflow_backend/app/api/v1/works/work_operation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="21" column="9" lean-forward="false" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../maoyan/workflow_backend/app/utils/decorators.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="94">
-          <caret line="41" column="8" lean-forward="false" selection-start-line="41" selection-start-column="8" selection-end-line="41" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../maoyan/workflow_backend/env/lib/python3.7/functools.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="174">
@@ -983,14 +744,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../maoyan/workflow-api/mysite/utils/decorators.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="253" column="30" lean-forward="false" selection-start-line="253" selection-start-column="30" selection-end-line="253" selection-end-column="30" />
           <folding />
         </state>
       </provider>
@@ -1032,7 +785,7 @@
         <state relative-caret-position="451">
           <caret line="180" column="0" lean-forward="false" selection-start-line="180" selection-start-column="0" selection-end-line="180" selection-end-column="0" />
           <folding>
-            <element signature="e#15#29#0" expanded="true" />
+            <element signature="e#15#29#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1042,7 +795,7 @@
         <state relative-caret-position="323">
           <caret line="74" column="12" lean-forward="false" selection-start-line="74" selection-start-column="12" selection-end-line="74" selection-end-column="12" />
           <folding>
-            <element signature="e#16#31#0" expanded="true" />
+            <element signature="e#16#31#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1052,7 +805,7 @@
         <state relative-caret-position="377">
           <caret line="31" column="18" lean-forward="false" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
           <folding>
-            <element signature="e#16#29#0" expanded="true" />
+            <element signature="e#16#29#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1069,14 +822,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="392">
           <caret line="38" column="19" lean-forward="false" selection-start-line="38" selection-start-column="19" selection-end-line="38" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../maoyan/Jaqen/app/sshd/proxy.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
-          <caret line="206" column="25" lean-forward="false" selection-start-line="206" selection-start-column="25" selection-end-line="206" selection-end-column="25" />
           <folding />
         </state>
       </provider>
@@ -1134,7 +879,7 @@
         <state relative-caret-position="346">
           <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
           <folding>
-            <element signature="e#150#165#0" expanded="true" />
+            <element signature="e#150#165#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1143,14 +888,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="23" column="33" lean-forward="false" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/array_list.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="3" lean-forward="false" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
           <folding />
         </state>
       </provider>
@@ -1189,8 +926,226 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="10" lean-forward="true" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
+        <state relative-caret-position="210">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../maoyan/ams_api/scripts/update_callback.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-50">
+          <caret line="7" column="32" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../maoyan/ams_api/mysite/utils/public_utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="444">
+          <caret line="137" column="53" lean-forward="false" selection-start-line="137" selection-start-column="53" selection-end-line="137" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../maoyan/ams_api/scripts/retry_fail_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="125" column="68" lean-forward="false" selection-start-line="125" selection-start-column="68" selection-end-line="125" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../maoyan/workflow-api/mysite/utils/decorators.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="211" column="26" lean-forward="false" selection-start-line="211" selection-start-column="26" selection-end-line="211" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../maoyan/workflow-api/mysite/utils/notice.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="135" column="28" lean-forward="true" selection-start-line="135" selection-start-column="28" selection-end-line="135" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/array_list.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../maoyan/Jaqen/app/sshd/proxy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="498">
+          <caret line="57" column="54" lean-forward="false" selection-start-line="57" selection-start-column="54" selection-end-line="57" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../maoyan/Jaqen/app/lib/check.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="19" lean-forward="false" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../maoyan/Jaqen/app/common/notice.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="11" column="6" lean-forward="false" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../maoyan/ams_api/mysite/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="86" column="0" lean-forward="false" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sort.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="116" column="7" lean-forward="false" selection-start-line="116" selection-start-column="7" selection-end-line="116" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/offer/29.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../maoyan/Jaqen/env/lib/python2.7/site-packages/paramiko/channel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="1072" column="26" lean-forward="false" selection-start-line="1072" selection-start-column="26" selection-end-line="1072" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/240.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="22" lean-forward="false" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/offer/30.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="32" column="20" lean-forward="false" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/offer/03.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="20" lean-forward="false" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/offer/04.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="482">
+          <caret line="72" column="0" lean-forward="false" selection-start-line="72" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../wepiao/python/tecs/scripts/check_cinemas_errors.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../wepiao/python/tecs/scripts/celeryctrl.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../wepiao/python/tecs/scripts/db_reporter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1560">
+          <caret line="487" column="27" lean-forward="false" selection-start-line="487" selection-start-column="27" selection-end-line="487" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/offer/06.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="11" lean-forward="true" selection-start-line="30" selection-start-column="11" selection-end-line="30" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../maoyan/Jaqen/app/sshd/utlis.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="355">
+          <caret line="132" column="15" lean-forward="false" selection-start-line="132" selection-start-column="0" selection-end-line="133" selection-end-column="0" />
+          <folding>
+            <element signature="e#25#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../maoyan/Jaqen/app/sshd/shell/ssh_option.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-92">
+          <caret line="32" column="38" lean-forward="true" selection-start-line="32" selection-start-column="38" selection-end-line="32" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../maoyan/Jaqen/app/sshd/shell/jumper.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="209" column="30" lean-forward="true" selection-start-line="209" selection-start-column="30" selection-end-line="209" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../maoyan/Jaqen/app/sshd/shell/command.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="141" column="37" lean-forward="true" selection-start-line="141" selection-start-column="37" selection-end-line="141" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/threading.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="716" column="8" lean-forward="false" selection-start-line="716" selection-start-column="8" selection-end-line="716" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../maoyan/Jaqen/app/sshd/handler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="876">
+          <caret line="178" column="23" lean-forward="true" selection-start-line="178" selection-start-column="0" selection-end-line="179" selection-end-column="0" />
           <folding />
         </state>
       </provider>
