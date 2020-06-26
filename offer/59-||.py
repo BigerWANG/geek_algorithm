@@ -8,9 +8,15 @@
 
 
 class MaxQueue(object):
+    """
+    维护一个递减队列
+    从队列尾部插入元素时，可以提前取出队列中所有比这个元素小的元素，
+    这样的方法等价于要求维护队列单调递减，即要保证每个元素前边都没有比它小的元素，
+    """
 
     def __init__(self):
         self.q = []
+        self._max_values = []  # 这是一个递减队列，即每个元素前边都没有比它小的元素
 
     def max_value(self):
         """
@@ -18,13 +24,18 @@ class MaxQueue(object):
         """
         if not self.q:
             return -1
-
+        return self._max_values[0] if self._max_values else None
 
     def push_back(self, value):
         """
         :type value: int
         :rtype: None
         """
+        # 判断max_value的最后一个值如果小于value就pop掉
+        # 这一步是维护一个递减队列
+        while self._max_values and self._max_values[-1] < value:
+            self._max_values.pop()
+        self._max_values.append(value)
         self.q.append(value)
 
     def pop_front(self):
@@ -33,28 +44,15 @@ class MaxQueue(object):
         """
         if not self.q:
             return -1
-        return self.q.pop(0)
-
-
-# Your MaxQueue object will be instantiated and called as such:
-# obj = MaxQueue()
-# param_1 = obj.max_value()
-# obj.push_back(value)
-# param_3 = obj.pop_front()
-
-
-
-
-
-
+        p_data = self.q.pop(0)
+        if self._max_values and p_data == self._max_values[0]:
+            self._max_values.pop(0)
+        return p_data
 
 
 
 def test():
-    nums = [1, 3, -1, -3, 5, 3, 6, 7]
-    k = 3
-    print(Solution().maxSlidingWindow2(nums, k))
-
+    pass
 
 
 
