@@ -1,7 +1,5 @@
 # coding: utf-8
 
-
-
 """
 根据每日 气温 列表，请重新生成一个列表，
 对应位置的输出是需要再等待多久温度才会升高超过该日的天数。如果之后都不会升高，请在该位置用 0 来代替。
@@ -10,7 +8,6 @@
 
 提示：气温 列表长度的范围是 [1, 30000]。每个气温的值的均为华氏度，都是在 [30, 100] 范围内的整数。
 """
-
 
 class Solution(object):
 
@@ -31,9 +28,6 @@ class Solution(object):
                 stack.pop()
             stack.append(key)
         return res_list
-
-
-
 
 
 def test():

@@ -28,7 +28,7 @@ class TreeNode(object):
         self.right = None
 
     def __repr__(self):
-    	return "<Node {}>".format(self.val)
+        return "<Node {}>".format(self.val)
 
 class Solution1(object):
     def levelOrder(self, root):
@@ -42,10 +42,10 @@ class Solution1(object):
         from collections import defaultdict
         d = defaultdict(list)
         def f(r, i):
-        	if r:
-        		d[i].append(r.val)
-        		f(r.left, i+1)
-        		f(r.right, i+1)
+            if r:
+                d[i].append(r.val)
+                f(r.left, i+1)
+                f(r.right, i+1)
         f(root, 0)
         return [i for i in d.values()]
 
