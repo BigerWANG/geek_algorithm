@@ -30,6 +30,7 @@ class TreeNode(object):
 
 
 class Solution(object):
+
     def lowestCommonAncestor(self, root, p, q):
         """
         :type root: TreeNode
