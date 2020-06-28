@@ -29,7 +29,7 @@ class Solution(object):
 
 
 def test():
-    s1 = "nwmog q k  gW  c    H  DYpIE    Lcz         gV    Bj   vkH X g       l                                                                                        "
+    s1 = ""
     length = 19
     print Solution().replaceSpaces(s1, length)
 
