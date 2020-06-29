@@ -30,6 +30,10 @@ class Solution(object):
         :type second: str
         :rtype: bool
         """
+        if not first or not second:
+            return False
+
+
 
 
 

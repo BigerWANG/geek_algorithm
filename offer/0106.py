@@ -37,7 +37,6 @@ class Solution(object):
                 s += "{}{}".format(_st, count)
                 break
             _next = S[n_step]
-
             if _st == _next:
                 n_step += 1
                 count += 1
