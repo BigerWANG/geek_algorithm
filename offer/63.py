@@ -17,7 +17,7 @@
 
 """
 
-# TODO: 动态规
+# TODO: 动态规划
 
 
 class Solution(object):

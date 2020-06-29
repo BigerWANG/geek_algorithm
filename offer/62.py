@@ -16,46 +16,28 @@
 输出: 2
 
 提示： 约瑟夫环
-地推公式： f(n, m) = (f(n-1, m) + m ) % n
+递归公式： f(n, m) = (f(n-1, m) + m ) % n
 """
 
 # TODO: 约瑟夫环不懂
 
 
 class Solution(object):
-    # def lastRemaining(self, n, m):
-    #     """
-    #     :type n: int
-    #     :type m: int
-    #     :rtype: int
-    #     """
-    #     if not n:
-    #         return None
-    #     count = 0
-    #     cycle_n = range(n)
-    #     pop_value = []
-    #     while len(cycle_n) > m:
-    #         count += 1
-    #         if count == m:
-    #             cycle_n.pop()
-
     def lastRemaining(self, n, m):
-        if n == 0:
+        l = range(n)
+        index = self.f(n, m)
+        return l[index]
+
+    def f(self, n, m):
+        if n <= 1:
             return 0
-
-
-
-
-
-
-
+        return (self.f(n - 1, m) + m) % n
 
 
 def test():
     n = 10
     m = 17
-    a = Solution().lastRemaining(n, m)
-    print a % n
+    print Solution().lastRemaining(n, m)
 
 
 if __name__ == '__main__':
