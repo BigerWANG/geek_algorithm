@@ -20,8 +20,6 @@ class Solution(object):
         pre(前驱指针))指向Null
         cur（当前指针）指向head
         每次迭代到 cur，都将 cur 的 next 指向 pre，然后 pre 和 cur 前进一位。
-
-
         """
         pre = None
         cur = head

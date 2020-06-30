@@ -47,8 +47,9 @@ class Solution(object):
                 count = 1
         return s if len(s) < len(S) else S
 
+
 def test():
-    num = "aaabbccdddddd"
+    num = "xxxx"
     print Solution().compressString(num)
 
 

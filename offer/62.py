@@ -19,7 +19,6 @@
 递归公式： f(n, m) = (f(n-1, m) + m ) % n
 """
 
-# TODO: 约瑟夫环不懂
 
 
 class Solution(object):
