@@ -85,8 +85,7 @@ class Solution(object):
 
 def test():
     num = 123
-    print Solution().romanToInt(num)
-
+    
 
 if __name__ == '__main__':
     test()
