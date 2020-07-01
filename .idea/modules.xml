@@ -11,6 +11,7 @@
       <module fileurl="file://$PROJECT_DIR$/../../maoyan/climb/.idea/climb.iml" filepath="$PROJECT_DIR$/../../maoyan/climb/.idea/climb.iml" />
       <module fileurl="file://$PROJECT_DIR$/../../maoyan/dba_api/.idea/dba_api.iml" filepath="$PROJECT_DIR$/../../maoyan/dba_api/.idea/dba_api.iml" />
       <module fileurl="file://$PROJECT_DIR$/../../wepiao/python/exos/.idea/exos.iml" filepath="$PROJECT_DIR$/../../wepiao/python/exos/.idea/exos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/geek_algorithm.iml" filepath="$PROJECT_DIR$/.idea/geek_algorithm.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/geek_suanfa.iml" filepath="$PROJECT_DIR$/.idea/geek_suanfa.iml" />
       <module fileurl="file://$PROJECT_DIR$/../../wepiao/python/grocer/.idea/grocer.iml" filepath="$PROJECT_DIR$/../../wepiao/python/grocer/.idea/grocer.iml" />
       <module fileurl="file://$PROJECT_DIR$/../../maoyan/grpcservice/.idea/grpcservice.iml" filepath="$PROJECT_DIR$/../../maoyan/grpcservice/.idea/grpcservice.iml" />
