@@ -21,13 +21,13 @@ class Solution(object):
         cur（当前指针）指向head
         每次迭代到 cur，都将 cur 的 next 指向 pre，然后 pre 和 cur 前进一位。
         """
-        pre = None
-        cur = head
+        pre = None  # 指定一个前驱节点为空
+        cur = head  # 当前节点
         while cur:
-            _next = cur.next
-            cur.next = pre
-            pre = cur
-            cur = _next
+            _next = cur.next  # 先算出来下一个节点保存在变量中
+            cur.next = pre  # 当前节点指向前驱节点，（反转）
+            pre = cur  # pre向前挪一位
+            cur = _next  # 当前节点向前挪一位
         return pre
 
 
