@@ -15,7 +15,6 @@
 进阶：
 
 你能尝试使用一趟扫描实现吗？
-
 """
 
 
@@ -39,13 +38,13 @@ class Solution(object):
         fast = head
         slow = head
 
-        for i in range(n):
+        for _ in range(n):
             if fast.next:
-                fast = fast.next
+                fast = fast.next  # 快指针先走N步伐
             else:
-                return head.next
-        while fast.next:
+                return head.next  # 如果n是1，那就返回head.next
+        while fast.next:  # 快指针走完后，继续和慢指针同时走，直到走到结束
             fast = fast.next
             slow = slow.next
-        slow.next = slow.next.next
+        slow.next = slow.next.next  # 此时的slow就是要删除的倒数第N个节点的前驱节点
         return head

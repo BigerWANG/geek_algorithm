@@ -29,7 +29,7 @@ class TreeNode(object):
 
 
 class Solution(object):
-    def buildTree(self, preorder, inorder):
+    def rebuildTree(self, preorder, inorder):
         self.dic, self.po = {}, preorder
         for i in range(len(inorder)):
             self.dic[inorder[i]] = i

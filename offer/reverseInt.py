@@ -9,7 +9,7 @@
 
 
 class Solution(object):
-    def reverse(self, x):
+    def reverseInt(self, x):
         """
         :type x: int
         :rtype: int
