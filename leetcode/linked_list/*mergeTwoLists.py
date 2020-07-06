@@ -35,10 +35,9 @@ class Solution(object):
                 l2 = l2.next
             new = new.next
         if l1:
-        	new.next = l1
+            new.next = l1
         else:
-        	new.next = l2
-
+            new.next = l2
         return head.next
 
 

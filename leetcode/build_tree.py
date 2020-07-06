@@ -3,6 +3,8 @@
 """
 根据array生产二叉树
 """
+
+
 class TreeNode(object):
     def __init__(self, data=None, left=None, right=None):
         self.data = data
@@ -11,7 +13,9 @@ class TreeNode(object):
         self.l = []
 
     def __repr__(self):
-    	return "<Node {}>".format(self.data)
+        return "<Node {}>".format(self.data)
+
+
 
    	def preorder(self):
 		if self.data is not None:
