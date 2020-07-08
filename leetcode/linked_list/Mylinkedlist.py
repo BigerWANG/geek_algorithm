@@ -35,13 +35,6 @@ class MyLinkedList(object):
         :type index: int
         :rtype: int
         """
-        if not index or not self.sentinel.next:
-            return -1
-        head = self.sentinel.next
-        for _ in range(index):
-            head = head.next
-
-
 
     def addAtHead(self, val):
         """
@@ -50,10 +43,6 @@ class MyLinkedList(object):
         :type val: int
         :rtype: None
         """
-        new_head = LinkNode(val)
-        if self.head:
-            new_head.next_node = self.head
-        self.head = new_head
 
     def addAtTail(self, val):
         """
@@ -61,10 +50,6 @@ class MyLinkedList(object):
         :type val: int
         :rtype: None
         """
-        tail = LinkNode(val)
-        if self.tail:
-            self.tail.next_node = tail
-            self.tail = tail
 
     def addAtIndex(self, index, val):
         """
@@ -75,9 +60,6 @@ class MyLinkedList(object):
         :type val: int
         :rtype: None
         """
-        if not index or not val:
-            return None
-        for _ in range(index):
 
 
     def deleteAtIndex(self, index):
