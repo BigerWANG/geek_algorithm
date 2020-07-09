@@ -21,6 +21,7 @@
 ]
 """
 
+
 class TreeNode(object):
     def __init__(self, x):
         self.val = x
@@ -29,6 +30,7 @@ class TreeNode(object):
 
     def __repr__(self):
         return "<Node {}>".format(self.val)
+
 
 class Solution1(object):
     def levelOrder(self, root):
