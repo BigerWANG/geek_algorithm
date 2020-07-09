@@ -1,50 +1,66 @@
 # coding: utf-8
 
-"""
-循环队列， 解决数据搬移的问题
-"""
 
 
 
-
-
-class CircularQueue(object):
-    def __init__(self, capacity):
-        self.capacity = capacity
-        self.items = [None for _ in range(capacity)]
-        self.head = 0
-        self.tail = 0
-
-    def enqueue(self, item):
+class MyCircularQueue(object):
+    def __init__(self, k):
         """
-        入队操作
-        :param item:
-        :return:
+        :type k: int
         """
-        if self.tail == self.capacity:
+        self.k = k + 1  # 队列长度, 循环队列需要多一个存储空间保存tail
+        self.head, self.tail = 0, 0
+        self.queue = [0] * self.k
+
+    def enQueue(self, value):
+        """
+        :type value: int
+        :rtype: bool
+        """
+        if self.isFull():
             return False
-        self.items[self.tail] = item
-        self.tail += 1
+        self.queue[self.tail] = value
+        self.tail = (self.tail + 1) % self.k
+        return True
 
-    def dequeue(self):
+    def deQueue(self):
         """
-        出队操作
-        :return:
+        :rtype: bool
         """
-        if self.head == self.tail:
-            return None
-        ret = self.items[self.head]
-        self.items[self.head] = None
-        self.head += 1
-        return ret
+        if self.isEmpty():
+            return False
+        # self.queue[self.head] = None
+        self.head = (self.head + 1) % self.k
+        return True
 
+    def Front(self):
+        """
+        Get the front item from the queue.
+        :rtype: int
+        """
+        if self.isEmpty():
+            return -1
+        return self.queue[self.head]
 
-def test():
-    pass
+    def Rear(self):
+        """
+        Get the last item from the queue.
+        :rtype: int
+        """
+        if self.isEmpty():
+            return -1
+        return self.queue[(self.tail - 1) % self.k]
 
+    def isEmpty(self):
+        """
+        Checks whether the circular queue is empty or not.
+        :rtype: bool
+        """
+        return self.head == self.tail
 
-
-
-if __name__ == '__main__':
-    test()
-
+    def isFull(self):
+        """
+        Checks whether the circular queue is full or not.
+        :rtype: bool
+        """
+        return (self.tail + 1) % self.k == self.head
