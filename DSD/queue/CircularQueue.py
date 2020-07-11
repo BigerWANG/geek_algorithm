@@ -17,56 +17,43 @@ head = (head + 1) % n
 """
 
 
-class CircularQueue(object):
-    def __init__(self, capacity):
-        self.capacity = capacity + 1
-        self.items = [None for _ in range(capacity + 1)]
-        self.head = 0
-        self.tail = 0
-
-    def enqueue(self, item):
+class MyCircularQueue(object):
+    def __init__(self, k):
         """
-        入队操作
-        :param item:
-        :return:
+        :type k: int
         """
-        if (self.tail + 1) % self.capacity == self.head:
-            return False
-        self.items[self.tail] = item
-        self.tail = (self.tail + 1) % self.capacity
-        return True
+        self.k = k + 1  # 队列长度, 循环队列需要多一个存储空间保存tail
+        self.head, self.tail = 0, 0
+        self.queue = [0] * self.k
 
-    def dequeue(self):
+    def Front(self):
         """
-        出队操作
-        :return:
+        Get the front item from the queue.
+        :rtype: int
         """
-        if self.head == self.tail:
-            return None
-        ret = self.items[self.head]
-        self.items[self.head] = None
-        self.head = (self.head + 1) % self.capacity
-        return ret
+        if self.isEmpty():
+            return -1
+        return self.queue[self.head]
 
-    def print_queue(self):
-        print self.items
-        print "head:", self.items[self.head], "index:", self.head
-        print "tail:", self.items[self.tail], "index:", self.tail
+    def Rear(self):
+        """
+        Get the last item from the queue.
+        :rtype: int
+        """
+        if self.isEmpty():
+            return -1
+        return self.queue[(self.tail - 1) % self.k]
 
+    def isEmpty(self):
+        """
+        Checks whether the circular queue is empty or not.
+        :rtype: bool
+        """
+        return self.head == self.tail
 
-def test():
-    a = CircularQueue(3)
-
-    a.enqueue("a")
-    a.enqueue("b")
-    a.enqueue("c")
-
-
-    a.print_queue()
-
-
-
-
-if __name__ == '__main__':
-    test()
-
+    def isFull(self):
+        """
+        Checks whether the circular queue is full or not.
+        :rtype: bool
+        """
+        return (self.tail + 1) % self.k == self.head

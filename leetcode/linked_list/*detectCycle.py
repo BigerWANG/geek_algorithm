@@ -33,7 +33,6 @@ class Solution(object):
                 return head
         return None
 
-
     def detectCycleByTwoIndex(self, head):
         """
         :type head: ListNode
