@@ -19,7 +19,7 @@ class MyStack(object):
         """
         Initialize your data structure here.
         """
-        self.q = deque() # 初始化一个队列
+        self.q = deque()  # 初始化一个队列
 
     def push(self, x):
         """
@@ -30,10 +30,8 @@ class MyStack(object):
         size = len(self.q)
         self.q.append(x)
         for _ in range(size):  
-        	# 把队列从前往后加进来， 把头加到尾就行了
-        	self.q.append(self.q.popleft())
-
-
+            # 把队列从前往后加进来， 把头加到尾就行了
+            self.q.append(self.q.popleft())
 
     def pop(self):
         """
@@ -42,7 +40,6 @@ class MyStack(object):
         """
         return self.q.popleft()
 
-
     def top(self):
         """
         Get the top element.
@@ -50,16 +47,12 @@ class MyStack(object):
         """
         return self.q[0] 
 
-
     def empty(self):
         """
         Returns whether the stack is empty.
         :rtype: bool
         """
-
         return len(self.q) == 0
-
-
 
 # Your MyStack object will be instantiated and called as such:
 # obj = MyStack()
