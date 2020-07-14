@@ -10,6 +10,8 @@
 """
 
 # Definition for singly-linked list.
+
+
 class ListNode(object):
     def __init__(self, val=0, next=None):
         self.val = val
@@ -23,7 +25,7 @@ class Solution(object):
         :type l2: ListNode
         :rtype: ListNode
         """
-        head = ListNode(0)
+        head = ListNode(0)  # 设置一个哨兵节点
         new = head
 
         while l1 and l2:

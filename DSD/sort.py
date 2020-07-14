@@ -96,23 +96,54 @@ def _merge(left, right):
 
 
 # 快速排序
-def quick_sort(a):
+class QuickSorted(object):
+    def sorted(self, array, l, r):
+        if l < r:
+            q = self.praition(array, l, r)
+            self.sorted(array, l, q - 1)
+            self.sorted(array, q+1, r)
+
+    @staticmethod
+    def praition(array, l, r):
+        """
+        获取位置下标
+        :param array:
+        :param l:
+        :param r:
+        :return:
+        """
+        x = array[r]
+        i = l-1
+        for j in range(l, r):
+            if array[j] <= x:
+                i += 1
+                array[i], array[j] = array[j], array[i]
+        array[i+1], array[r] = array[r], array[i+1]
+        return i+1
+
+
+def quick_sorted(L):
+    return QuickSorted().sorted(L, 0, len(L) - 1)
+
+
+def quick_sorted1(array):
     """
-    分治法
-    1, 对于数组a，选取一个数组中随便一个值p
-    2, 遍历数组a与p 做比较，将小于p的放到p左边大于p的放p右边
-    3, 递归的循环这个过程，递归公式是
-
-    :return:
+    最简单的快排写法
     """
-    p = a[0]
-    for i in range(len(a)):
-        if a[i] < p:
-            pass
-    return quick_sort(a[p:]) + quick_sort(a[:p])
+    if not array or len(array) < 2:
+        return array
+    pivot = array[0]  # 选一个分界点
+    less_than_p = [i for i in array if i <= pivot]
+    bigger_than_p = [i for i in array if i > pivot]
+    return quick_sorted1(less_than_p) + [pivot, ] + quick_sorted1(bigger_than_p)
 
 
-#
+
+
+
+
+
+
 def queryK(array, k):
     """
     :param array:

@@ -35,17 +35,12 @@ class CQueue(object):
             return self.__delete_stack.pop()
 
 
-
-
-
 def test():
     q = CQueue()
     q.appendTail(1)
     q.appendTail(2)
     q.appendTail(3)
     q.appendTail(4)
-
-
 
     print q.deleteHead()
     print q.deleteHead()
