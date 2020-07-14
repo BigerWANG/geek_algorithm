@@ -1,6 +1,20 @@
 # coding: utf-8
 
+"""
+循环队列， 解决数据搬移的问题
+tail = 尾指针
+head = 头指针
+n = 队列长度
 
+队列已满的判断条件：
+(tail + 1) % n = head
+
+每次入队尾指针后移一位
+tail = (tail + 1) %n
+
+每次出队，头指针后移一位
+head = (head + 1) % n
+"""
 
 
 class MyCircularQueue(object):
@@ -11,27 +25,6 @@ class MyCircularQueue(object):
         self.k = k + 1  # 队列长度, 循环队列需要多一个存储空间保存tail
         self.head, self.tail = 0, 0
         self.queue = [0] * self.k
-
-    def enQueue(self, value):
-        """
-        :type value: int
-        :rtype: bool
-        """
-        if self.isFull():
-            return False
-        self.queue[self.tail] = value
-        self.tail = (self.tail + 1) % self.k
-        return True
-
-    def deQueue(self):
-        """
-        :rtype: bool
-        """
-        if self.isEmpty():
-            return False
-        # self.queue[self.head] = None
-        self.head = (self.head + 1) % self.k
-        return True
 
     def Front(self):
         """
