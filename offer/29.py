@@ -63,9 +63,6 @@ class Solution(object):
                 break
         return res
 
-
-
-
     def spiralOrder1(self, matrix):
         """
         :type matrix: List[List[int]]
