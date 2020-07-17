@@ -27,6 +27,7 @@
 输出: false
 """
 
+
 class Solution(object):
     def isValid(self, s):
         """

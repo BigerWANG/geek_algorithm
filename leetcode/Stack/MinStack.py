@@ -11,6 +11,7 @@ getMin() —— 检索栈中的最小元素。
 
 """
 
+
 class MinStack(object):
 
     def __init__(self):
@@ -21,15 +22,13 @@ class MinStack(object):
         self.stack = []
         self.min_stack = []  # 保存最小值
 
-
-
     def push(self, x):
         """
         :type x: int
         :rtype: None
         """
         if not self.min_stack or x <= self.min_stack[-1]:  # 如果最小栈是空或者top <= x
-			self.min_stack.append(x)
+            self.min_stack.append(x)
         self.stack.append(x)
 
 
@@ -39,17 +38,14 @@ class MinStack(object):
         """
         d = self.stack.pop()
         if d == self.min_stack[-1]:
-        	self.min_stack.pop()
-
-
-
+            self.min_stack.pop()
 
     def top(self):
         """
         :rtype: int
         """
         if self.stack:
-        	return self.stack[-1]
+            return self.stack[-1]
         return None
 
 
