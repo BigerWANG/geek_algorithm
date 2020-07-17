@@ -103,6 +103,7 @@ class QuickSorted(object):
             self.sorted(array, l, q - 1)
             self.sorted(array, q+1, r)
 
+
     @staticmethod
     def praition(array, l, r):
         """
@@ -168,10 +169,9 @@ def bucket_sort():
 
 
 if __name__ == '__main__':
-    l = [4, 2, 5, 12, 3]
-    queryK(l, 2)
-    # for i in (range(len(l),0, -1)):
-    #     print(i)
-    # print bubble_sort(l)
-    print quick_sort(l)
-
+    import random
+    l = range(11)
+    random.shuffle(l)
+    print l
+    quick_sorted(l)
+    print l

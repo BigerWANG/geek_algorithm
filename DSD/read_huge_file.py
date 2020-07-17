@@ -10,7 +10,7 @@ def chunk_read(file_name):
     分块读取并统计
     :return:
     """
-    size = 1024 * 1024  # 每次读取1M
+    size = 1024 * 1024 * 20  # 每次读取20M
     count = 0
     with open(file_name, "w") as w:
         while True:
