@@ -41,7 +41,6 @@ class MyCircularQueue(object):
         """
         if self.isFull():
             return False
-        # ret = self.queue[self.head]
         self.queue[self.head] = None
         self.head = (self.head + 1) % self.k
         return True
@@ -81,7 +80,6 @@ class MyCircularQueue(object):
 
 def test():
     a = MyCircularQueue(3)
-
     print a.enQueue(1)
     print a.enQueue(2)
     print a.enQueue(3)
