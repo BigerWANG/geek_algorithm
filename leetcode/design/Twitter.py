@@ -21,6 +21,7 @@ class UserInfo(object):
     followers = []  # 谁关注了我
     follows = []  # 我关注了谁
 
+
 class Twitter(object):
     """
     思路：

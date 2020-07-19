@@ -39,7 +39,7 @@ class LRUCache(object):
         self.dic = {}
         self.head = CacheNode(None, None)
         self.tail = CacheNode(None, None)
-        self.head.next_node = self.tail # 双向循环链表
+        self.head.next_node = self.tail  # 双向循环链表
         self.tail.prev = self.head
 
         self.capacity = capacity
@@ -61,6 +61,7 @@ class LRUCache(object):
         node.next_node = node.prev
 
     def insert(self, node):
+        """将node插入到链表头"""
         node.next_node = self.head.next_node
         node.prev = self.head
         temp = self.head.next_node
@@ -86,8 +87,6 @@ class LRUCache(object):
         node = CacheNode(key, value)
         self.dic[key] = node
         self.insert(node)
-
-
 
 
 # Your LRUCache object will be instantiated and called as such:
