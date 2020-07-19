@@ -14,14 +14,12 @@ follow(followerId, followeeId): 关注一个用户
 unfollow(followerId, followeeId): 取消关注一个用户
 """
 from collections import defaultdict
-import time
 
 
 class UserInfo(object):
     user_id = None
-    followers = [] # 谁关注了我
+    followers = []  # 谁关注了我
     follows = []  # 我关注了谁
-
 
 class Twitter(object):
     """
@@ -36,6 +34,7 @@ class Twitter(object):
         # 保存用户推特数据
         self.user_pool = defaultdict(UserInfo)
         self.twitter_pool = defaultdict(list)
+        self.time = 0
 
     def postTweet(self, userId, tweetId):
         """
@@ -44,7 +43,12 @@ class Twitter(object):
         :type tweetId: int
         :rtype: None
         """
-        tw_info = (tweetId, int(time.time()))  # 保存一个和时间戳
+        if not self.user_pool[userId].user_id:
+            user = UserInfo()
+            user.user_id = userId
+            self.user_pool[userId] = user
+        self.time += 1
+        tw_info = (tweetId, self.time)  # 保存一个和时间戳
         self.twitter_pool[userId].append(tw_info)
 
     def getNewsFeed(self, userId):
@@ -66,7 +70,7 @@ class Twitter(object):
 
         # 按时间排序取前 10 条
         if tws:
-            tws = sorted(tws, key=lambda x: x[1])[:10]
+            tws = sorted(tws, key=lambda x: x[1], reverse=True)[:10]
         return tws
 
     def follow(self, followerId, followeeId):

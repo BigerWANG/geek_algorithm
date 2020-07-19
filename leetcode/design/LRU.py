@@ -13,18 +13,59 @@
 """
 
 
+class CacheNode(object):
+    def __init__(self, key, value):
+        self.key = key
+        self.value = value
+        self.prev = None
+        self.next_node = None
+
+
 class LRUCache(object):
+
+    """
+    字典加双向循环链表
+    使用字典存储节点，使用head和tail维护一个双向链表
+    关键的两个方法：
+    1，从双向链表中删除指定节点 (链表满了或者将其中的值放入链表头)
+    2, 将一个节点插入到双向链表开头
+    """
 
     def __init__(self, capacity):
         """
         :type capacity: int
         """
+        # 构建一个容量为capacity的缓存池
+        self.dic = {}
+        self.head = CacheNode(None, None)
+        self.tail = CacheNode(None, None)
+        self.head.next_node = self.tail # 双向循环链表
+        self.tail.prev = self.head
+
+        self.capacity = capacity
 
     def get(self, key):
         """
         :type key: int
         :rtype: int
         """
+        if key not in self.dic:
+            return -1
+        node = self.dic[key]
+        self.delete(node)
+        self.insert(node)
+        return node.value
+
+    def delete(self, node):
+        node.prev.next_node = node.next_node
+        node.next_node = node.prev
+
+    def insert(self, node):
+        node.next_node = self.head.next_node
+        node.prev = self.head
+        temp = self.head.next_node
+        self.head.next_node = node
+        temp.prev = node
 
     def put(self, key, value):
         """
@@ -32,6 +73,21 @@ class LRUCache(object):
         :type value: int
         :rtype: None
         """
+        if key in self.dic:
+            node = self.dic[key]
+            node.value = value
+            self.delete(node)
+            self.insert(node)
+            return
+        if len(self.dic) == self.capacity:
+            node = self.tail.prev
+            self.delete(node)
+            del self.dic[node.key]
+        node = CacheNode(key, value)
+        self.dic[key] = node
+        self.insert(node)
+
+
 
 
 # Your LRUCache object will be instantiated and called as such:
