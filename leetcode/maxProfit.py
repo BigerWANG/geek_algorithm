@@ -43,6 +43,7 @@ class Solution(object):
         for i in range(n):
             if not stack or prices[i] < prices[stack[-1]]:
                 stack.append(i)
+        print(stack)
         maxPro = 0
         for i in range(n - 1, -1, -1):
             if i == stack[-1]:
@@ -53,9 +54,18 @@ class Solution(object):
         return maxPro
 
 
+
+    def maxprofit(self, prices):
+        """
+        :param prices:
+        :return:
+        """
+
+
+
 def test():
     s = Solution()
-    print s.maxProfit1([7, 1, 5, 3, 6, 4])
+    print(s.maxProfit([7, 1, 5, 3, 6, 4]))
 
 
 if __name__ == '__main__':
