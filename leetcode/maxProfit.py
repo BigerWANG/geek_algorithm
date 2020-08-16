@@ -26,6 +26,7 @@
 
 
 class Solution(object):
+
     def maxProfit(self, prices):
         """
         :type prices: List[int]
@@ -37,20 +38,6 @@ class Solution(object):
         如果栈顶小于p，p入栈
         最后结果是栈顶 - 栈底
         """
-        s = []
-        ret = 0
-        if not prices:
-            return 0
-        for i in prices:
-            while s and s[-1] >= i:
-                top = s.pop()
-                if not s:
-                    continue
-                ret = max(ret, top - s[0])
-            s.append(i)
-        return s[-1] - s[0] if s else 0
-
-    def maxProfit1(self, prices):
         stack = []
         n = len(prices)
         for i in range(n):
@@ -64,6 +51,7 @@ class Solution(object):
             if prices[i] > prices[stack[-1]]:
                 maxPro = max(maxPro, prices[i] - prices[stack[-1]])
         return maxPro
+
 
 def test():
     s = Solution()
