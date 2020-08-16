@@ -16,7 +16,6 @@ class LinkedListNode(object):
 
 class LinkedList(object):
     """单链表"""
-
     def __init__(self):
         self.head = None
         self.tail = None
@@ -73,12 +72,12 @@ class Graph(object):
         visited = set()
         node = self.graph_list[s[0]].output_list()[s[1]]
         queue.append(node)
-        visited.add(self.graph_list[s])
+        visited.add(node)
 
         while queue:
             w = queue.pop(0)
             while w:
-                w = w.next_node()
+                w = w.next_node
                 if w not in visited:
                     queue.append(w)
                     visited.add(w)
@@ -112,3 +111,32 @@ g.BFS((0, 0))
 # ----------------------BFS------------------------
 
 
+graph = {
+    'A': ['B', 'C'],
+    'B': ['A', 'C', 'D'],
+    'C': ['A', 'B', 'D', 'E'],
+    'D': ['B', 'C', 'E', 'F'],
+    'E': ['C', 'D'],
+    'F': ['D']
+}
+
+
+def BFS(graph, s):  # graph图  s指的是开始结点
+    # 需要一个队列
+    queue = []
+    seen = set()  # 看是否访问过该结点
+    queue.append(s)
+    seen.add(s)
+    while len(queue) > 0:
+        vertex = queue.pop(0)  # 保存第一结点，并弹出，方便把他下面的子节点接入
+        nodes = graph[vertex]  # 子节点的数组
+        for w in nodes:
+            if w not in seen:  # 判断是否访问过，使用一个数组
+                queue.append(w)
+                seen.add(w)
+        print(vertex)
+
+
+print "*" * 20
+
+BFS(graph, "A")
