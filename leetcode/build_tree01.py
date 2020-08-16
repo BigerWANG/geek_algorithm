@@ -92,7 +92,6 @@ def level_bfs(tree):
 	q.append(tree)
 	while q:
 		level = []
-		print q
 		for _ in range(len(q)):  # 在每一层开始遍历前，先记录这一层的节点数量，然后一口气处理完这一层的n个节点
 			node = q.popleft()	
 			level.append(node.data)

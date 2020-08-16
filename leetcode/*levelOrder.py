@@ -19,6 +19,7 @@
   [9,20],
   [15,7]
 ]
+
 """
 
 
@@ -51,30 +52,25 @@ class Solution1(object):
         f(root, 0)
         return [i for i in d.values()]
 
-
-class Solution(object):
     def levelOrder1(self, root):
         """
-        :type root: TreeNode
-        :rtype: List[List[int]]
-        1, 先把树转换成list(前序遍历)
-        2，再根据切片层序遍历
-
+        :param root:
+        :return:
         """
-        tree = self.preorder(root)
-        i = 1
-        level_order = []
-        while i < len(tree):
-            _l = [i for i in tree[i-1: i*2 - 1] if i]
-            level_order.append(_l)
-        return levelOrder
-            
-
-    def preorder(self, root):
-        tree_list = []
         if not root:
-            return tree_list
-        tree_list.append(self.preorder(root))
-        tree_list.append(self.preorder(root.left))
-        tree_list.append(self.preorder(root.right))
-        return root.val
+            return []
+        from collections import deque
+        res = []
+        q = deque()
+        q.append(root)
+        while q:
+            level = []
+            for _ in range(len(q)):
+                node = q.popleft()
+                level.append(node.val)
+                if node.left:
+                    q.append(node.left)
+                if node.right:
+                    q.append(node.right)
+            res.append(level)
+        return res
