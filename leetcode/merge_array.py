@@ -44,8 +44,6 @@ class Solution(object):
 
 
 
-
-
 def test():
     s = Solution()
     nums1 = [1,2,3,0,0,0]
@@ -53,7 +51,6 @@ def test():
     nums2 = [2,5,6]
     n = 3
     s.merge(nums1, m, nums2, n)
-    print nums1
 
 
 if __name__ == '__main__':

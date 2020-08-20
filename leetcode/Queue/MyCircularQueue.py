@@ -22,7 +22,6 @@ class MyCircularQueue(object):
         self.k = k + 1  # 队列长度
         self.head, self.tail = 0, 0
         self.queue = [None for _ in range(self.k)]
-        print self.queue
 
     def enQueue(self, value):
         """
@@ -80,10 +79,10 @@ class MyCircularQueue(object):
 
 def test():
     a = MyCircularQueue(3)
-    print a.enQueue(1)
-    print a.enQueue(2)
-    print a.enQueue(3)
-    print a.enQueue(4)
+    print(a.enQueue(1))
+    print(a.enQueue(2))
+    print(a.enQueue(3))
+    print(a.enQueue(4))
 
 
 

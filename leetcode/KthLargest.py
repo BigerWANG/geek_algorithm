@@ -33,10 +33,8 @@ class KthLargest:
         """
         if self.size < self.k:  # 如果堆的长度小于K，val入堆
             heapq.heappush(self.pool, val)
-            print self.pool
         elif val > self.pool[0]:  # 如果val大于堆顶元素，去掉堆顶重新入堆，并且堆化
             heapq.heapreplace(self.pool, val)
-            print self.pool
 
         return self.pool[0]
 

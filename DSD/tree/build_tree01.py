@@ -18,7 +18,7 @@ class TreeNode(object):
 
     def preorder(self):
         if self.data is not None:
-            print self.data
+            print(self.data)
         if self.left is not None:
             self.left.preorder()
         if self.right is not None:
@@ -28,7 +28,7 @@ class TreeNode(object):
         if self.left is not None:
             self.left.inorder()
         if self.data is not None:
-            print self.data
+            print(self.data)
         if self.right is not None:
             self.right.inorder()
 
@@ -66,25 +66,11 @@ def pre_traverse_tree(node):
 
 
 
-def graph():
-
-    a = \
-        [
-
-       # 1, 2, 3, 4
-
-        [0, 1, 1, 0],
-        [1, 0, 1, 1],
-        [1, 1, 0, 1],
-        [0, 1, 1, 0],
-        ]
-    print a[2][3]
 
 
 
-
-if __name__ == '__main__':
-    graph()
+root = gen_tree([3,9,20,None,None,15,7])
+root.inorder()
 
 
 

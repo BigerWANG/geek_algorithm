@@ -35,31 +35,28 @@ class Solution(object):
         :rtype: bool
         """
         if not s:
-            return True
+            return False
+        d = {"(":")", "{":"}", "[":"]"}
         stack = []
         for i in s:
-        	if i == "(":
-        		stack.append(")")
-        	elif i == "[":
-        		stack.append("]")
-        	elif i == "{":
-        		stack.append("}")
-        	elif not stack or i != stack.pop():
-        		return False
-        return stack == []
+            if not stack or d.get(stack[-1]) != i:
+                stack.append(i)
+            else:
+                stack.pop()
+        return not stack
 
 
 
 
 
 def test():
-	a =  "{}[]()"
-	s = Solution()
-	print s.isValid(a)
+    a =  "{}[]()"
+    s = Solution()
+    print(s.isValid(a))
 
 
 if __name__ == '__main__':
-	test()
+    test()
 
 
 

@@ -55,7 +55,7 @@ class Solution(object):
 def test():
     first = "palsss"
     second = "pallll"
-    print Solution().oneEditAway(first, second)
+    Solution().oneEditAway(first, second)
 
 
 if __name__ == '__main__':
