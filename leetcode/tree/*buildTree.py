@@ -46,15 +46,23 @@ class Solution(object):
         """
         if not preorder or not inorder:
             return None
+        print("*" *10)
+        print(preorder)
+        print(inorder)
+        print("*" *10)
+        print("\n")
         val = preorder.pop(0)
         root = TreeNode(val)
         root_index = inorder.index(val)
-
         root.left = self.buildTree(preorder[:root_index], inorder[:root_index])
         root.right = self.buildTree(preorder[root_index:], inorder[root_index+1:])
         return root
 
 def test():
-    preorder = [3, 9, 20, None, None, 15, 7]
+    preorder = [3, 9, 20, 15, 7]
     inorder = [9, 3, 15, 20, 7]
     root = Solution().buildTree(preorder, inorder)
+
+
+if __name__ == '__main__':
+    test()
