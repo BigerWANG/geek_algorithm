@@ -49,7 +49,7 @@ def gen_tree(array):
         try:
             head.left = TreeNode(next(iter_value))  # 取下一个节点，就是左子节点
             d.append(head.left)  # 左子节点入队
-            head.right = TreeNode(next(iter_value)) # 再下一个就是又子节点
+            head.right = TreeNode(next(iter_value)) # 再下一个就是右子节点
             d.append(head.right)  # 右子节点入队
         except StopIteration:  # 直到生成器为空，取不出来下一个节点为止
             break

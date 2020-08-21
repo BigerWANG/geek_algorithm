@@ -43,6 +43,4 @@ if __name__ == '__main__':
     import random
     l = range(10)
     random.shuffle(l)
-    print l
-    print KthLargest(9, l).add(100)
 
