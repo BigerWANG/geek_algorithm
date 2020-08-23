@@ -18,7 +18,7 @@ class TreeNode(object):
 
     def preorder(self):
         if self.data is not None:
-            print self.data
+            print(self.data)
         if self.left is not None:
             self.left.preorder()
         if self.right is not None:
@@ -28,7 +28,7 @@ class TreeNode(object):
         if self.left is not None:
             self.left.inorder()
         if self.data is not None:
-            print self.data
+            print(self.data)
         if self.right is not None:
             self.right.inorder()
 
@@ -49,7 +49,7 @@ def gen_tree(array):
         try:
             head.left = TreeNode(next(iter_value))  # 取下一个节点，就是左子节点
             d.append(head.left)  # 左子节点入队
-            head.right = TreeNode(next(iter_value)) # 再下一个就是又子节点
+            head.right = TreeNode(next(iter_value)) # 再下一个就是右子节点
             d.append(head.right)  # 右子节点入队
         except StopIteration:  # 直到生成器为空，取不出来下一个节点为止
             break
@@ -64,6 +64,7 @@ def pre_traverse_tree(node):
     yield node.data
 
 
+<<<<<<< HEAD
 def graph():
 
     a = \
@@ -77,6 +78,15 @@ def graph():
 
 if __name__ == '__main__':
     graph()
+=======
+
+
+
+
+
+root = gen_tree([3,9,20,None,None,15,7])
+root.inorder()
+>>>>>>> 9781437cd374e1a2f5eaa182e4c928f3f60f0333
 
 
 

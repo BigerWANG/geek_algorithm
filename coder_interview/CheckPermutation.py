@@ -29,7 +29,7 @@ class Solution(object):
 def test():
     s1 = "abc"
     s2 = "abd"
-    print Solution().CheckPermutation(s1, s2)
+    Solution().CheckPermutation(s1, s2)
 
 
 if __name__ == '__main__':

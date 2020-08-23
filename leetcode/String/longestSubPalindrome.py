@@ -22,4 +22,6 @@ class Solution(object):
         """
         :type s: str
         :rtype: str
+        思路：
+        利用滑动窗口找到最长且回文的子串
         """
