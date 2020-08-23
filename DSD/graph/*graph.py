@@ -128,6 +128,7 @@ def BFS(graph, s):  # graph图  s指的是开始结点
     queue.append(s)
     seen.add(s)
     while len(queue) > 0:
+        print queue
         vertex = queue.pop(0)  # 保存第一结点，并弹出，方便把他下面的子节点接入
         nodes = graph[vertex]  # 子节点的数组
         for w in nodes:
@@ -139,4 +140,4 @@ def BFS(graph, s):  # graph图  s指的是开始结点
 
 print "*" * 20
 
-BFS(graph, "A")
+BFS(graph, "F")

@@ -64,24 +64,16 @@ def pre_traverse_tree(node):
     yield node.data
 
 
-
-
 def graph():
 
     a = \
         [
-
-       # 1, 2, 3, 4
-
         [0, 1, 1, 0],
         [1, 0, 1, 1],
         [1, 1, 0, 1],
         [0, 1, 1, 0],
         ]
     print a[2][3]
-
-
-
 
 if __name__ == '__main__':
     graph()
