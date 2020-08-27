@@ -17,13 +17,10 @@ def bubble_sort(l):
         return "error"
     for i in range(len(l)):
         flag = False
-        print "range: ", len(l) - 1 - i
-        print "range: ", range(0, len(l) - 1 - i)
         for j in range(0, len(l) - 1 - i):  # 为了防止超出List范围， 之所以要 -1 是因为下边要+1: l[j] > l[j+1]
             if l[j] > l[j+1]:  # 如果后一个大于前一个，两者交换
                 l[j], l[j+1] = l[j+1], l[j]
                 flag = True
-            print ">>>>l: ", l
         if not flag:
             break
     return l
@@ -46,9 +43,7 @@ def insertion_sort(l):
     for i in range(len(l)):
         value = l[i]  # 第一个元素
         for j in range(len(l[:i]), 0, -1):
-            print j
             if l[j] > value:
-                print l[j], l[j+1]
                 l[j+1] = l[j]
             else:
                 break
@@ -81,7 +76,7 @@ def merge_sort(a):
 
 def _merge(left, right):
     res = []  # 先声明一个空数组，用来存放对比过后的数据
-    i = 0
+    i = 0  # 分别是left和right的索引
     j = 0
     while i < len(left) and j < len(right):  # i和j两个index依次在left和right上取元素进行比较
         if left[i] <= right[j]:
@@ -90,7 +85,7 @@ def _merge(left, right):
         else:
             res.append(right[j])
             j += 1
-    res += left[i:]
+    res += left[i:]  # 这两步是添加剩余的元素
     res += right[j:]
     return res
 
@@ -139,32 +134,6 @@ def quick_sorted1(array):
     return quick_sorted1(less_than_p) + [pivot, ] + quick_sorted1(bigger_than_p)
 
 
-
-
-
-
-
-
-def queryK(array, k):
-    """
-    :param array:
-    :return:
-    """
-    if not array:
-        return
-    p = array[-1]
-    for a in array:
-        if a > p:
-            pass
-
-
-def bucket_sort():
-    """
-    :return:
-    """
-    pass
-
-
 # 计数排序
 
 
@@ -172,6 +141,6 @@ if __name__ == '__main__':
     import random
     l = range(11)
     random.shuffle(l)
-    print l
+    print(l)
     quick_sorted(l)
-    print l
+    print(l)

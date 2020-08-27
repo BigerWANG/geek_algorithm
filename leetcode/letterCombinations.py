@@ -13,6 +13,7 @@
 
 """
 
+from functools import reduce
 
 class Solution(object):
     def letterCombinations(self, digits):
@@ -39,10 +40,8 @@ class Solution(object):
         return tool(nums)
 
 
-
-
 def test():
-    print Solution().letterCombinations("235")
+    print(Solution().letterCombinations("235"))
 
 
 if __name__ == '__main__':

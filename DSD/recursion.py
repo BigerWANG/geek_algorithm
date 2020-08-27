@@ -10,7 +10,7 @@ def find_recommender(recommender):
     2，终止条件 find(n) == None
     """
 
-    print "....select recommender: %s" % recommender  # 此处写查询逻辑
+    print("....select recommender: %s" % recommender) # 此处写查询逻辑
     final_recommender = ""
     if not find_recommender(final_recommender):
         return final_recommender
@@ -67,4 +67,4 @@ def cell_division(n):
 
 
 if __name__ == '__main__':
-    print deduplication_step(12)
+    print(deduplication_step(12))
