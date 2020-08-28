@@ -32,7 +32,7 @@ class Solution(object):
 
 
         start, end = 0, len(numbers) - 1
-        # 在剩余的元素中二分查找num2
+        # 二分思想
         while start <= end:
             # 因为是递增的数组，所以可以用夹逼法，大于 target end往左移，小于targe, start往右移
             if numbers[start] + numbers[end] > target:
