@@ -30,11 +30,10 @@ class Solution(object):
         if len(numbers) <= 1:
             return []
 
-
         start, end = 0, len(numbers) - 1
         # 二分思想
         while start <= end:
-            # 因为是递增的数组，所以可以用夹逼法，大于 target end往左移，小于targe, start往右移
+            # 因为是递增的数组，所以可以用对夹法，大于 target end往左移，小于targe, start往右移
             if numbers[start] + numbers[end] > target:
                 end -= 1
             elif numbers[start] + numbers[end] < target:
