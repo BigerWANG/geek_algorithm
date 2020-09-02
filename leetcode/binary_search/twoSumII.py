@@ -30,7 +30,6 @@ class Solution(object):
         if len(numbers) <= 1:
             return []
 
-
         start, end = 0, len(numbers) - 1
         # 二分思想
         while start <= end:

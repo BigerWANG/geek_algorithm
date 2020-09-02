@@ -38,7 +38,7 @@ class Solution(object):
         # 从头开始查找
         for i in range(len(nums)):
             target = nums[i]
-            _nums = nums[i+1: ]
+            _nums = nums[i+1:]
             if self.binary_search(_nums, target):
                 return target
         return -1
