@@ -74,7 +74,6 @@ class Mixture(type):
 class Hong(Wang, Zhang, Jiang, metaclass=Mixture):
     pass
 
-
 def test(Person):
     Person.eat()
     Person.sleep()
