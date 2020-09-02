@@ -33,7 +33,7 @@ class Solution(object):
 def test():
     A = [1, 2, 3, 2, 1]
     B = [3, 2, 1, 4, 7]
-    print Solution().findLength(A, B)
+
 
 
 if __name__ == '__main__':

@@ -46,7 +46,7 @@ class Solution(object):
 def test():
     v1 = "01"
     v2 = "1"
-    print Solution().compareVersion(v1, v2)
+    print(Solution().compareVersion(v1, v2))
 
 
 if __name__ == '__main__':
