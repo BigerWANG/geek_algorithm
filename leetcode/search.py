@@ -43,7 +43,7 @@ class Solution(object):
             mid = (start + end) // 2
             if nums[mid] == target:
                 return mid
-            # FIXME 判断左右是否有序时，头和尾是固定的
+            # TODO：判断左右是否有序时，头和尾是固定的
             if nums[0] <= nums[mid]:  # 如果左半部分有序
                 if nums[0] <= target <= nums[mid]:  # 检查target是否在左边部分里
                     end = mid - 1  # 如果在左半部分里，那么就把区间设置在左半部分。
