@@ -68,8 +68,6 @@ class Solution(object):
         return -1
 
 
-
-
 s = Solution()
 a = \
 [4,5,6,7,0,1,2]
