@@ -30,6 +30,7 @@ class Solution(object):
         """
         :type root: TreeNode
         :rtype: int
+        最大深度 = max(左子树深度，右子树深度) + 根节点
         """
         if not root:
             return 0

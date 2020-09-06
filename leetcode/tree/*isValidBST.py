@@ -33,19 +33,19 @@
 
 class Solution(object):
     def isValidBST(self, root):
-        return self.dg(root, -(2**32), 2**32)
+        return self.dg(root, -(2**32), 2**32)  # 设置两个 dummy 区间值，分别是最大和最小区间
 
     def dg(self, root, min_value, max_value):
         if not root:
             return True
 
-        if not (min_value < root.val < max_value and root.val):
+        if not (min_value < root.val < max_value):
             return False
 
-        if not self.dg(root.left, min_value, root.val):
+        if not self.dg(root.left, min_value, root.val):  # 左子树大于最小值，并且小于根
             return False
 
-        if not self.dg(root.right, root.val, max_value):
+        if not self.dg(root.right, root.val, max_value):  # 右子树大于跟并且小于最大值
             return False
 
         return True

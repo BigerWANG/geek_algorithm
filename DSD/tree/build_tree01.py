@@ -64,29 +64,29 @@ def pre_traverse_tree(node):
     yield node.data
 
 
-<<<<<<< HEAD
-def graph():
 
-    a = \
-        [
-        [0, 1, 1, 0],
-        [1, 0, 1, 1],
-        [1, 1, 0, 1],
-        [0, 1, 1, 0],
-        ]
-    print a[2][3]
+l = [4,2,7,1,3,6,9]
 
-if __name__ == '__main__':
-    graph()
-=======
+root = gen_tree(l)
 
 
+class Solution(object):
+    def invertTree(self, root):
+        """
+        翻转二叉树
+        :type root: TreeNode
+        :rtype: TreeNode
+        """
+        # 终止条件
+        if not root:
+            return root
+        # 处理当前逻辑层
+        root.left, root.right = root.right, root.left
+        # 下探到下一层
+        self.invertTree(root.left)
+        self.invertTree(root.right)
+        return root
 
-
-
-root = gen_tree([3,9,20,None,None,15,7])
-root.inorder()
->>>>>>> 9781437cd374e1a2f5eaa182e4c928f3f60f0333
 
 
 
