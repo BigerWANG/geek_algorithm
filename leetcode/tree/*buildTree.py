@@ -19,17 +19,12 @@
     /  \
    15   7
 """
-from collections import deque
+
+
+from DSD.tree.build_tree01 import TreeNode
 
 
 
-
-# Definition for a binary tree node.
-class TreeNode(object):
-    def __init__(self, x):
-        self.val = x
-        self.left = None
-        self.right = None
 
 
 class Solution(object):
@@ -46,11 +41,6 @@ class Solution(object):
         """
         if not preorder or not inorder:
             return None
-        print("*" *10)
-        print(preorder)
-        print(inorder)
-        print("*" *10)
-        print("\n")
         val = preorder.pop(0)
         root = TreeNode(val)
         root_index = inorder.index(val)
@@ -59,9 +49,13 @@ class Solution(object):
         return root
 
 def test():
-    preorder = [3, 9, 20, 15, 7]
-    inorder = [9, 3, 15, 20, 7]
+    preorder = [1,2,3]
+    inorder = [2,3,1]
     root = Solution().buildTree(preorder, inorder)
+
+    print(root.left)
+    print(root.left.left)
+    print(root.left.right)
 
 
 if __name__ == '__main__':

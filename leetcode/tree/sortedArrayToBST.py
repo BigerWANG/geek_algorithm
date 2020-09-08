@@ -41,7 +41,7 @@ class Solution(object):
         def helper(left, right):
             if left > right:
                 return
-            mid = (left + right) / 2
+            mid = (left + right) // 2
             root = TreeNode(nums[mid])
             root.left = helper(left, mid - 1)
             root.right = helper(mid + 1, right)
@@ -86,9 +86,20 @@ def curs_binary_search(nums, target):
 
 
 def test():
-    # print(binary_search(range(100), 53))
-    curs_binary_search(range(100), 53)
+    tree = Solution().sortedArrayToBST([-10,-3,0,5,9])
+    q = []
+    q.append(tree)
 
+    while q:
+        level = []
+        for i in range(len(q)):
+            node = q.pop(0)
+            level.append(node.val)
+            if node.left:
+                q.append(node.left)
+            if node.right:
+                q.append(node.right)
+        print(level)
 
 
 

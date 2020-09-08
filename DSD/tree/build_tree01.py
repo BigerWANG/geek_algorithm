@@ -8,17 +8,17 @@ from collections import deque
 
 
 class TreeNode(object):
-    def __init__(self, data=None, left=None, right=None):
-        self.data = data
+    def __init__(self, val=None, left=None, right=None):
+        self.val = val
         self.left = left
         self.right = right
 
     def __repr__(self):
-        return "<Node {}>".format(self.data)
+        return "<Node {}>".format(self.val)
 
     def preorder(self):
-        if self.data is not None:
-            print(self.data)
+        if self.val is not None:
+            print(self.val)
         if self.left is not None:
             self.left.preorder()
         if self.right is not None:
@@ -27,8 +27,8 @@ class TreeNode(object):
     def inorder(self):
         if self.left is not None:
             self.left.inorder()
-        if self.data is not None:
-            print(self.data)
+        if self.val is not None:
+            print(self.val)
         if self.right is not None:
             self.right.inorder()
 
@@ -61,7 +61,7 @@ def pre_traverse_tree(node):
         return
     yield pre_traverse_tree(node.left)
     yield pre_traverse_tree(node.right)
-    yield node.data
+    yield node.val
 
 
 

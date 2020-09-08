@@ -76,7 +76,6 @@ class Solution(object):
         while True:
             try:
                 flag = martix[l_index][h_index]
-                print flag
             except IndexError:  # 如果数组越界，返回
                 return False
             if target > flag:  # 跳过flag所在列, h_index += 1
@@ -100,7 +99,7 @@ def test():
       [18, 21, 23, 26, 30]
     ]
     target = 5
-    print Solution().leftFlagfindTargetIn2DArray(matrix, target)
+    print(Solution().leftFlagfindTargetIn2DArray(matrix, target))
 
 
 if __name__ == '__main__':

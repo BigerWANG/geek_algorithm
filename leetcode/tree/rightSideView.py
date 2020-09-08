@@ -58,7 +58,7 @@ class Solution(object):
 
 def test():
     r = [1,2]
-    print Solution().rightSideView(r)
+    print(Solution().rightSideView(r))
 
 
 if __name__ == '__main__':
