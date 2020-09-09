@@ -71,12 +71,28 @@ class Soultion1:
 
 class Soultion2:
     def combine(self, n,k):
-        pass
+        if k  > n:
+            return []
+        res = []
+        def dfs(nums, track):
+            if len(track) == k:
+                res.append(track[:])
+                return
+
+            for i in nums:
+                if i in track:
+                    continue
+                track.append(i)
+                dfs(nums, track)
+                track.pop()
+        nums = [i for i in range(1, n+1)]
+        dfs(nums, [])
+        return res
 
 
 
 if __name__ == '__main__':
-    s = Soultion1()
+    s = Soultion2()
     res = s.combine(4,2)
     print(res)
 
