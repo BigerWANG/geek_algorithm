@@ -91,4 +91,13 @@ class Solution(object):
 
 
 
+def dfs(root):
+    if not root:
+        return None
+    q = []
+
+
+
+
+
 

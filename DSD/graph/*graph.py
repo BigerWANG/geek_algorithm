@@ -88,36 +88,6 @@ class DictGraph(object):
                     self.step += 1
             # print(vertex)
 
-    def DFS(self, s, t):
-        """
-        深度优先
-        :param int s: 开始顶点
-        :param int t: 目标顶点
-        :return:
-        """
-        self.step = 0
-        # queue本质上是堆栈，用来存放需要进行遍历的数据
-        # order里面存放的是具体的访问路径
-        queue, order = [], []
-        # 首先将初始遍历的节点放到queue中，表示将要从这个点开始遍历
-        queue.append(s)
-        while queue:
-            # 从queue中pop出点v，然后从v点开始遍历了，所以可以将这个点pop出，然后将其放入order中
-            # 这里才是最有用的地方，pop（）表示弹出栈顶，由于下面的for循环不断的访问子节点，并将子节点压入堆栈，
-            # 也就保证了每次的栈顶弹出的顺序是下面的节点
-            v = queue.pop(0)
-            order.append(v)
-            # 这里开始遍历v的子节点
-            for w in self.graph[v]:
-                if w == t:
-                    print("found it! cost %d step" % self.step)
-                    return
-                # w既不属于queue也不属于order，意味着这个点没被访问过，所以讲起放到queue中，然后后续进行访问
-                if w not in order and w not in queue:
-                    queue.append(w)
-                    self.step += 1
-        return order
-
 
     def RECUR_DFS(self, s, t):
         """
@@ -194,7 +164,6 @@ graph = {
 }
 
 
-<<<<<<< HEAD
 def BFS(graph, s):  # graph图  s指的是开始结点
     # 需要一个队列
     queue = []
@@ -202,7 +171,6 @@ def BFS(graph, s):  # graph图  s指的是开始结点
     queue.append(s)
     seen.add(s)
     while len(queue) > 0:
-        print queue
         vertex = queue.pop(0)  # 保存第一结点，并弹出，方便把他下面的子节点接入
         nodes = graph[vertex]  # 子节点的数组
         for w in nodes:
@@ -212,8 +180,6 @@ def BFS(graph, s):  # graph图  s指的是开始结点
         print(vertex)
 
 
-print "*" * 20
 
 BFS(graph, "F")
-=======
->>>>>>> 9781437cd374e1a2f5eaa182e4c928f3f60f0333
+

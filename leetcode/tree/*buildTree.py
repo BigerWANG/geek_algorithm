@@ -49,8 +49,8 @@ class Solution(object):
         return root
 
 def test():
-    preorder = [1,2,3]
-    inorder = [2,3,1]
+    preorder = [3, 9, 20, 15, 7]
+    inorder = [9, 3, 15, 20, 7]
     root = Solution().buildTree(preorder, inorder)
 
     print(root.left)

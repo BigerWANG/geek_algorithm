@@ -40,54 +40,29 @@ from DSD.tree.build_tree01 import TreeNode
 class Solution(object):
     def buildTree(self, preorder, inorder):
         """
-
-        在 后续遍历中找边界，
-        确定前序遍历中那个区间是左子树，哪个区间是右子树，
-        分别遍历构造这两个区间连接到root上就ok
+        先确定根节点：根节点是前序遍历的第一个元素
+        再在中序遍历中确定左右子树的个数：根节点左边是左子树，根节点右边是右子树
+        递归这个过程
         :type preorder: List[int]
         :type inorder: List[int]
         :rtype: TreeNode
         """
-
         if not preorder or not inorder:
-            return []
+            return None
 
-        if len(preorder) != len(inorder):
-            return []
+        val = preorder.pop(0)
+        root_node = TreeNode(val)
+        root_index = inorder.index(val)
 
-        # 先确定头结点
-        r = preorder[0]
-        root = TreeNode(r)
-        # 剩下的节点
-        r_index = inorder.index(r)  # 根节点在中序遍历中的位置
-        left_tree = len(inorder[:r_index])  # 左子树长度
-        # right_tree = len(inorder[r_index + 1:]) # 右子树长度
+        left_pre = preorder[:root_index]
+        left_in = inorder[:root_index]
 
-        root.left = self.init_tree(preorder[1:1+left_tree])
-        root.right =self.init_tree(preorder[1+left_tree:])
+        right_pre = preorder[root_index:]
+        right_in = inorder[root_index+1:]
 
-        self.buildTree(preorder[1:1+left_tree], preorder[1+left_tree:])
-        return root
-
-
-    def init_tree(self, items):
-        if not items:
-            return TreeNode(None)
-        l = iter(items)
-        d = []
-        root = TreeNode(next(l))
-        d.append(root)
-        while d:
-            node = d.pop(0)
-            try:
-                node.left = TreeNode(next(l))
-                d.append(node.left)
-                node.right = TreeNode(next(l))
-                d.append(node.right)
-            except StopIteration:
-                break
-        return root
-
+        root_node.left = self.buildTree(left_pre, left_in)
+        root_node.right = self.buildTree(right_pre, right_in)
+        return root_node
 
     def buildTree1(self, preorder, inorder):
         """
@@ -108,7 +83,6 @@ class Solution(object):
             # 在中序遍历中确定根节点
             inorder_root = index[preorder[preorder_root]]
 
-            print(inorder_root)
 
             # 先把根节点建立出来（前序遍历的第一个节点就是根节点）
             root = TreeNode(preorder[preorder_root])
@@ -116,31 +90,17 @@ class Solution(object):
             # 左子树的节点个数（根节点在后续遍历中的index - 后续遍历的起始位置）
             size_left_subtree = inorder_root - inorder_left
 
-            # 右子树的节点个数
-            print(preorder_left + 1,)  # +1是为了隔掉root
-            print(preorder_left + size_left_subtree,)  # 左子树的终止位置
-            print(inorder_left,)
-            print(inorder_root - 1)
-
-            print(">>>>>>>>>>>>>>>")
-
-            print(preorder_left + size_left_subtree + 1,)
-            print(preorder_right,)
-            print(inorder_root + 1,)
-            print(inorder_right)
-
-
             # 构建左子树
-            root.left = mybuild(preorder_left + 1,  # +1是为了隔掉root
-                                preorder_left + size_left_subtree,  # 左子树的终止位置
-                                inorder_left,
-                                inorder_root - 1)
+            root.left = mybuild(preorder_left + 1,  # 前序遍历中的左子树
+                                preorder_left + size_left_subtree,  # 前序遍历中左子树的终止位置
+                                inorder_left,  # 中序遍历中的左子树
+                                inorder_root - 1)  # 中序遍历中左子树终止位置
 
             # 构建右子树
-            root.right = mybuild(preorder_left + size_left_subtree + 1,
-                                 preorder_right,
-                                 inorder_root + 1,
-                                 inorder_right)
+            root.right = mybuild(preorder_left + size_left_subtree + 1,  # 前序遍历中的右子树起始点
+                                 preorder_right,  # 前序遍历中右子树的终止点
+                                 inorder_root + 1,  # 中序遍历中右子树的起始点
+                                 inorder_right)  # 中序遍历中右子树的终止点
             return root
         n = len(preorder)
         # 构造哈希映射，快速定位根节点
@@ -151,9 +111,9 @@ class Solution(object):
 
 s = Solution()
 
-pre = [1,2,3]
-ino = [2,3,1]
-tree1 = s.buildTree1(pre, ino)
+preorder = [3,9,20,15,7]
+inorder = [9,3,15,20,7]
+tree1 = s.buildTree(preorder, inorder)
 
 
 
