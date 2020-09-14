@@ -27,7 +27,7 @@ class Solution(object):
 def test():
     s = "abcdefg"
     n = 2
-    print Solution.reverseLeftWords(s, n) == "cdefgab"
+    print(Solution.reverseLeftWords(s, n) == "cdefgab")
 
 
 

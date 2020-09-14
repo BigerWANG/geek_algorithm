@@ -16,8 +16,8 @@
        "()(())",
        "()()()"
      ]
-
 """
+
 
 class Solution(object):
     def generateParenthesis(self, n):
@@ -27,7 +27,6 @@ class Solution(object):
         """
         if n < 1:
             return ""
-
 
         res = []
         def generate(left, right, s, n):  # 左括号长度，右括号长度，

@@ -86,7 +86,6 @@ class Solution3(object):
                     combin.append(letter)
                     backtrack(index+1)
                     combin.pop()
-
         res = []
         combin = []
         backtrack(0)
