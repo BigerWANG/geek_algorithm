@@ -32,13 +32,12 @@ class Solution(object):
                 curr_len -= 1  # 这里-1是表示移动后的窗口长度-1
             lookup.add(s[i])
             max_len = max(max_len, curr_len)
-        print lookup
         return max_len
 
 
 def test():
     s = "pwwkewwwwwwwww"
-    print Solution().lengthOfLongestSubstring(s)
+    print(Solution().lengthOfLongestSubstring(s))
 
 
 if __name__ == '__main__':

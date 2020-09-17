@@ -28,10 +28,10 @@ class MovingAverage(object):
 
 def test():
     a = MovingAverage(3)
-    print a.next(1)
-    print a.next(10)
-    print a.next(3)
-    print a.next(5)
+    print(a.next(1))
+    print(a.next(10))
+    print(a.next(3))
+    print(a.next(5))
 
 
 if __name__ == '__main__':

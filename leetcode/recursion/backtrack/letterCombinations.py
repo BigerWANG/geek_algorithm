@@ -100,7 +100,7 @@ class Solution3(object):
 def test():
     res3 = Solution3().letterCombinations("23")
     print(res3)
-    res2 = Solution2().letterCombinations("23")
+    res2 = Solution().letterCombinations("23")
     print(res2)
 
 

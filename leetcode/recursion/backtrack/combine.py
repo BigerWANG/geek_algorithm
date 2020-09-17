@@ -73,7 +73,6 @@ class Solution1:
 class Solution2:
     def combine(self, n,k):
         """
-        正确的做法
         :param n:
         :param k:
         :return:
@@ -95,7 +94,6 @@ class Solution2:
                 track.pop()
         dfs(nums, [])
         return res
-
 
 
 if __name__ == '__main__':

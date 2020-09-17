@@ -46,7 +46,7 @@ class Solution(object):
                 return
             for i in range(first, len(nums)):
                 curr.append(nums[i])
-                backtrack(i+1, curr)
+                backtrack(i+1, curr)  # 每次递归起始index往后进一位，反正重复计算
                 curr.pop()
 
         for k in range(len(nums) + 1):  # 因为是子集，所以子集长度最大不能超过nums, 长度递增, 所以在循环中调用递归函数
