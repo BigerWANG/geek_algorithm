@@ -17,6 +17,7 @@
 
 """
 
+
 class Solution(object):
     def permuteUnique(self, nums):
         """
@@ -25,37 +26,30 @@ class Solution(object):
         """
         if not nums:
             return []
-
-        
-
-
-
-class Solution1(object):
-    def permuteUnique(self, nums):
-        """
-        :param nums:
-        :return:
-        """
-        from collections import Counter
-
-        def track(path, counter):
-            if len(path) == len(nums):
+        def dfs(nums, size, depth, path, used, res):
+            if depth == size:
                 res.append(path[:])
-
-            for x in counter:
-                if counter[x] > 0:
-                    path.append(x)
-                    counter[x] -= 1
-                    track(path, counter)
+                return
+            for i in range(size):
+                if not used[i]:
+                    # 如果不是起始位置 并且当前数等于下一个数，并且上一个数没有被使用过
+                    if i > 0 and nums[i] == nums[i-1] and not used[i-1]:
+                        continue
+                    used[i] = True
+                    path.append(nums[i])
+                    dfs(nums, size, depth + 1, path, used, res)
+                    used[i] = False
                     path.pop()
-                    counter[x] += 1
+
+        size = len(nums)
+        nums.sort()
+        used = [False] * size
         res = []
-        track([], Counter(nums))
+        dfs(nums, size, 0, [], used, res)
         return res
 
 
 
-
 nums = [1,1,2]
-r = Solution1().permuteUnique(nums)
+r = Solution().permuteUnique(nums)
 print(r)

@@ -45,31 +45,9 @@ candidate 中的每个元素都是独一无二的。
 
 """
 
-class Solution(object):
-    def combinationSum(self, candidates, target):
-        """
-        :type candidates: List[int]
-        :type target: int
-        :rtype: List[List[int]]
-        """
-        ans = []
-        temp = []
-        def recursion(idx, res):
-            if idx >= len(candidates) or res >= target:
-                if res == target:
-                    ans.append(temp[:])
-                return
-
-            temp.append(candidates[idx])
-            recursion(idx, res + candidates[idx])
-            temp.pop()
-            recursion(idx + 1, res)
-
-        recursion(0, 0)
-        return ans
 
 
-class Solution1:
+class Solution:
     def combinationSum(self, candidates, target):
         candidates.sort()
         n = len(candidates)

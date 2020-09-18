@@ -65,4 +65,3 @@ a = [2,1]
 
 
 s = Solution().findMin(a)
-print s

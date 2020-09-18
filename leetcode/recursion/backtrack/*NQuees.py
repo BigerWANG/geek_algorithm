@@ -69,39 +69,3 @@ class Solution(object):
         backtrack(0)
         return solutions
 
-
-class Solution2(object):
-    def combinationSum2(self, candidates, target):
-        """
-        :type candidates: List[int]
-        :type target: int
-        :rtype: List[List[int]]
-        """
-        res = []
-        track = []
-
-        def dfs(start, sub_sum):
-            if sub_sum > target:
-                return
-            if sub_sum == target:
-                res.append(track[:])
-                return
-
-            for i in range(start, len(candidates)):
-                # if candidates[i] in track:
-                #     continue
-                track.append(candidates[i])
-                dfs(i+1, sub_sum + candidates[i])
-                track.pop()
-
-        dfs(0, 0)
-        return res
-
-
-candidates = [2,5,2,1,2]
-target = 5
-
-res=Solution2().combinationSum2(candidates, target)
-
-print(res)
-
