@@ -18,9 +18,7 @@ def divide_conquer(problem, param1, param2):
     # 准备数据
     data = prepare_data(problem)
     subproblems = split_problem(problem, data)
-    # conquer
+
 
 """
-
-
 
