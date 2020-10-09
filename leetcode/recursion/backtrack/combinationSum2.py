@@ -33,30 +33,50 @@ candidates 中的每个数字在每个组合中只能使用一次。
 """
 
 class Solution:
-    def combinationSum(self, candidates, target):
+    @staticmethod
+    def combinationSum2(candidates, target):
+        """
+        组合总和
+        1，先排序
+        2，回溯
+        :param candidates:
+        :param target:
+        :return:
+        """
+        res = []
+        if not candidates: return res
         candidates.sort()
         n = len(candidates)
-        res = []
-        def backtrack(i, tmp_sum, tmp): # 回溯函数：参数：（候选数组下标，当前组合的总数，当前组合数组）
-            # if tmp_sum > target or i == n:  # 剪枝：如果当前组合总数大于目标数或者已经遍历完了，直接 return 不添加tmp到res中
-            #     return
-            if tmp_sum == target:  # 如果
-                res.append(tmp)
+        def dfs(start, curr_sum, curr_array):  # 定义三个变量 回溯起始点，当前组合总和，当前组合数组
+
+            if curr_sum > target:
                 return
-            if i > 0 and candidates[i] == candidates[i-1]:
+
+            if curr_sum == target:
+                res.append(curr_array[:])
                 return
-            # i是起始高度，j是当前index
-            for j in range(i, n): # 这里循环多少次就是递归多少次，在回溯中递归深度不能大于决策树高度
-                if tmp_sum + candidates[j] > target:  # 一旦大于这个数就退出循环停止迭代
-                    break
-                backtrack(j, tmp_sum + candidates[j], tmp + [candidates[j]])
-        backtrack(0, 0, [])
+
+            for i in range(start, n):
+                # 排除重复的数字
+                # 这个地方 i>start 的意思是已经循环到以start开始的下一位了
+                if i > start and candidates[i] == candidates[i-1]:
+                    continue
+
+                curr_array.append(candidates[i])
+                dfs(i+1, curr_sum+candidates[i], curr_array)
+                curr_array.pop()
+
+        dfs(0, 0, [])
         return res
 
 
 
-s = Solution()
-res = s.combinationSum([1,4,2,3], 5)
+candidates = [2,5,2,1,2]
+target = 5
+
+# candidates = [10,1,2,7,6,1,5]
+# target = 8
+res = Solution.combinationSum2(candidates, target)
 print(res)
 
 

@@ -122,24 +122,10 @@ def quick_sorted(L):
     return QuickSorted().sorted(L, 0, len(L) - 1)
 
 
-def quick_sorted1(array):
-    """
-    最简单的快排写法
-    """
-    if not array or len(array) < 2:
-        return array
-    pivot = array[0]  # 选一个分界点
-    less_than_p = [i for i in array if i <= pivot]
-    bigger_than_p = [i for i in array if i > pivot]
-    return quick_sorted1(less_than_p) + [pivot, ] + quick_sorted1(bigger_than_p)
-
-
-# 计数排序
-
 
 if __name__ == '__main__':
     import random
-    l = range(11)
+    l = [2,3,4,5,1,2,5,6,1,314132]
     random.shuffle(l)
     print(l)
     quick_sorted(l)
