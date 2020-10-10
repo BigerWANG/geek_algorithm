@@ -59,7 +59,6 @@ class Solution(object):
                     end = mid - 1
                 else:
                     start = mid + 1
-
             else:  # 如果是右半段有序
                 if nums[mid] <= target <= nums[end]:
                     start = mid + 1
@@ -72,7 +71,7 @@ s = Solution()
 a = \
 [4,5,6,7,0,1,2]
 
-print s.search(a, 0)
+print(s.search(a, 0))
 
 
 

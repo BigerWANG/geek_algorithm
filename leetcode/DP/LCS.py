@@ -14,7 +14,6 @@ def recus_longest_common_subsecquence(s1, s2):
     :return:
     """
     def dp(i, j):
-
         # 空字符串的case base
         if i == -1 or j == -1:
             return 0
@@ -39,7 +38,6 @@ def loop_longest_common_subsecquence(s1, s2):
     m = len(s1)
     n = len(s2)
     dp = [[0] * (n+1) for _ in range(m+1)]
-    print dp
 
     for i in range(1, m+1):
         for j in range(1, n+1):
@@ -54,5 +52,5 @@ def loop_longest_common_subsecquence(s1, s2):
 
 
 
-print recus_longest_common_subsecquence("babcde", "acze")
-print loop_longest_common_subsecquence("babcde", "acze")
+print(recus_longest_common_subsecquence("babcde", "acze"))
+print(loop_longest_common_subsecquence("babcde", "acze"))

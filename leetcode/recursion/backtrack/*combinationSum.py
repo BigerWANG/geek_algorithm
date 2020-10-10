@@ -46,97 +46,35 @@ candidate 中的每个元素都是独一无二的。
 """
 
 
-
 class Solution:
-    def combinationSum(self, candidates, target):
-        candidates.sort()
-        n = len(candidates)
+    @staticmethod
+    def combinationSum(candidates, target):
         res = []
-        def backtrack(i, tmp_sum, tmp): # 回溯函数：参数：（候选数组下标，当前组合的总数，当前组合数组）
-            if tmp_sum > target or i == n:  # 剪枝：如果当前组合总数大于目标数或者已经遍历完了，直接 return 不添加tmp到res中
-                return
-            if tmp_sum == target:  # 如果
-                res.append(tmp)
-                return
-            # i是起始高度，j是当前index
-            for j in range(i, n): # 这里循环多少次就是递归多少次，在回溯中递归深度不能大于决策树高度
-                if tmp_sum + candidates[j] > target:  # 一旦大于这个数就退出循环停止迭代
-                    break
-                backtrack(j, tmp_sum + candidates[j], tmp + [candidates[j]])
-        backtrack(0, 0, [])
-        return res
-
-
-
-
-class Solution2(object):
-    def combine(self, n, k):
-        """
-        :type n: int
-        :type k: int
-        :rtype: List[List[int]]
-        track 长度 <= k
-        """
-
-        res = []
-        if n < 1:
-            return []
-
-        nums = list(range(1, n+1))
-
-        def dfs(nums, track):
-            if len(track) == k:
-                res.append(track[:])
-                return
-            else:
-                for i in range(len(nums)):
-                    if nums[i] in track:
-                        continue
-                    track.append(nums[i])
-                    dfs(nums[i:], track)
-                    track.pop()
-        dfs(nums, [])
-        return res
-
-
-class Solution3(object):
-    def subsets(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: List[List[int]]
-        找出nums所有的子集
-        """
-        res = []
-        def dfs(start, track):
-            if k == len(track):
-                res.append(track[:])
+        if not candidates: return []
+        n  = len(candidates)
+        def dfs(start, curr_sum, curr_array):
+            if start > n:
                 return
 
-            for i in range(start, len(nums)):
-                track.append(nums[i])
-                dfs(i + 1, track)  #
-                track.pop()
-        for k in range(len(nums)+1):
-            dfs(0, [])
+            if curr_sum > target:  # 这一步很关键, 如果不判断则会栈溢出
+                return
+
+            if curr_sum == target:
+                res.append(curr_array[:])
+                return
+
+            for i in range(start, n):
+                curr_array.append(candidates[i])
+                dfs(i, candidates[i] + curr_sum, curr_array)
+                curr_array.pop()
+        dfs(0, 0, [])
         return res
 
 
 
 
 
-s = Solution3()
-res = s.subsets([1,2,3])
+candidates = [2,3,5]
+target = 8
+res = Solution.combinationSum(candidates, target)
 print(res)
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -53,7 +53,6 @@ class Solution(object):
         :rtype: ListNode
         可以递归的合并两个升序链表
         先实现一个两个链表合并的方法
-        然后
         """
         if not lists:
             return []
