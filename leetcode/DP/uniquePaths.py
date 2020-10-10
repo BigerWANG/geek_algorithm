@@ -16,6 +16,8 @@ class Solution(object):
         if m == 0 or n == 0:
             return 0
         dp = [[0 for _ in range(n)] for _ in range(m)]
+
+        # 因为只能往下走或者向右走，所以
         dp[0] = [1 for _ in range(n)]
         for i in dp:
             i[0] = 1
