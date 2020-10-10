@@ -18,7 +18,7 @@ class Solution(object):
         for i in range(1, n):
             if nums[i-1] > 0:
                 nums[i] += nums[i-1]
-        print nums
+        print(nums)
         return max(nums)
 
 
@@ -46,9 +46,5 @@ def max_sub_array(nums):
 
 
 
-
 nums = [-2, 1, -3, 4, -1, 2]
-# nums = [1]
-
-# print max_sub_array(nums)
-print Solution().maxSubArray(nums)
+print(Solution().maxSubArray(nums))

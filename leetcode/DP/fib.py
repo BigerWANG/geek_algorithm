@@ -17,12 +17,11 @@ def feb(n):
         d[i] = d[i - 1] + d[i - 2]
     return d[n] % 1000000007
 
+
 class Solution:
     def uniquePaths(self, m, n):
-        dp = []
         # 先生成一个左右边界都为 1 的二维数组
         dp = [[1]*n] + [[1]+[0] * (n-1) for _ in range(m-1)]
-        print dp
 
         for i in range(1, m):
             for j in range(1, n):
@@ -36,5 +35,4 @@ class Solution:
 
 
 
-print Solution().uniquePaths(4, 3)
-print Solution1().uniquePaths(4, 3)
+print(Solution().uniquePaths(4, 3))
