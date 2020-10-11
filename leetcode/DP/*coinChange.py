@@ -72,7 +72,6 @@ def coin_change1(coins, amount):
     """
     dp = [amount + 1 for _ in range(amount + 1)]
     dp[0] = 0
-
     for i in range(len(dp)):
         for coin in coins:
             if i - coin < 0:
@@ -81,4 +80,18 @@ def coin_change1(coins, amount):
     return -1 if dp[amount] == amount + 1 else dp[amount]
 
 
-print coin_change1([1, 2, 5], 11)
+def firstUniqChar(s):
+    """
+    :type s: str
+    :rtype: int
+    """
+    if not s: return -1
+    from collections import Counter
+    c = Counter(s)
+    for i in range(len(s)):
+        if c[s[i]] == 1:
+            return i
+    return -1
+
+
+print firstUniqChar("addaddada")
