@@ -67,7 +67,6 @@ class Solution:
         return num_island
 
 
-
 def test():
     a = [["1"],
          ["1"]]

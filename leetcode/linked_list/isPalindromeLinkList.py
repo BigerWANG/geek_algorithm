@@ -14,11 +14,13 @@
 输出: true
 """
 
+
 # Definition for singly-linked list.
 class ListNode(object):
     def __init__(self, x):
         self.val = x
         self.next = None
+
 
 class Solution(object):
     def isPalindrome0(self, head):
@@ -38,7 +40,6 @@ class Solution(object):
             r = r.next
         return True 
 
-
     def reverse(self, head):
         if not head:
             return head
@@ -51,7 +52,6 @@ class Solution(object):
             pre = cur
             cur = next
         return pre
-
 
     def isPalindrome1(self, head):
         """

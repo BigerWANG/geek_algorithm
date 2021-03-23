@@ -38,7 +38,7 @@ class Solution(object):
         return dp[0][0]
 
 
-class Solution(object):
+class Solution1(object):
     def minimumTotal(self, triangle):
         """
         """
@@ -58,5 +58,5 @@ class Solution(object):
 t = [[2], [3, 4], [6, 5, 7], [4, 1, 8, 3]]
 
 
-print Solution().minimumTotal(t)
+print(Solution().minimumTotal(t))
 

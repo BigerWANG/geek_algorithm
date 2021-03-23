@@ -94,13 +94,12 @@ def _merge(left, right):
 class QuickSorted(object):
     def sorted(self, array, l, r):
         if l < r:
-            q = self.praition(array, l, r)
+            q = self.partition(array, l, r)
             self.sorted(array, l, q - 1)
             self.sorted(array, q+1, r)
 
-
     @staticmethod
-    def praition(array, l, r):
+    def partition(array, l, r):
         """
         获取位置下标
         :param array:
@@ -118,14 +117,16 @@ class QuickSorted(object):
         return i+1
 
 
+
+
+
 def quick_sorted(L):
     return QuickSorted().sorted(L, 0, len(L) - 1)
 
 
-
 if __name__ == '__main__':
     import random
-    l = [2,3,4,5,1,2,5,6,1,314132]
+    l = [i for i in range(10)]
     random.shuffle(l)
     print(l)
     quick_sorted(l)
